@@ -1,0 +1,105 @@
+{
+  "checkedDate": "2026-10-19",
+  "researchMode": "Public online sources only; no emails, calls, messages, forms or institutional outreach.",
+  "conclusion": "No additional higher-detail susceptibility layer or local inventory met all geography, downloadable-asset, explicit-reuse and documented-quality gates in the public sources checked. This is a search result, not proof that no such dataset exists.",
+  "newLayerAdded": false,
+  "candidates": [
+    {
+      "id": "gsi-regional-existing",
+      "name": "KSDMA-hosted GSI Kozhikode susceptibility zones — already in atlas",
+      "geography": "Kozhikode district derivative; incomplete coverage inside atlas reference boundary",
+      "scaleResolution": "NLSM programme 1:50,000; source raster cell size, minimum mapping unit and local positional accuracy not disclosed in ZIP",
+      "date": "GSI April 2022 snapshot; derivative processing 12–15 August 2025",
+      "method": "Public XML documents RasterToPolygon, projection, clip and dissolve, not the underlying susceptibility model",
+      "license": "No explicit open reuse licence in district ZIP; GSI copyright/reuse restrictions remain unresolved",
+      "validation": "No district-specific independent validation established",
+      "assets": ["https://sdma.kerala.gov.in/wp-content/uploads/2025/08/Kozhikode.zip"],
+      "sources": ["https://sdma.kerala.gov.in/hazard-maps/", "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf"],
+      "decision": "Existing regional exploratory layer only; no precision upgrade or export clearance"
+    },
+    {
+      "id": "gsi-meso-sector",
+      "name": "GSI Kattipara–Chamal–Vettiyozhijathottam sector",
+      "geography": "Named local sector in Kozhikode, not district-wide coverage; final extent unverified",
+      "scaleResolution": "1:10,000 programme entry; final pixel size and positional accuracy unverified",
+      "date": "SOP marks Taken up in FS 2020–21; no verified completion date",
+      "method": "Meso-scale SOP; completed sector-specific model/report not located",
+      "license": "No product-specific open reuse terms verified",
+      "validation": "No final sector validation located",
+      "assets": [],
+      "sources": ["https://bhusanket.gsi.gov.in/Landslide_Hazard_pdf/Mesoscale%20Landslide%20Susceptibility%20Mapping%20-%20SOP%20of%20GSI.cleaned.pdf", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420"],
+      "decision": "Lead only. PIB's 160 completed meso-scale sectors nationally does not identify this sector"
+    },
+    {
+      "id": "thiruvambadi-report",
+      "name": "KSDMA Thiruvambadi susceptibility and preparedness report",
+      "geography": "Thiruvambadi Grama Panchayath, wards and case-study locations in Kozhikode",
+      "scaleResolution": "Report maps do not establish a source raster resolution or verified 1:10,000 GSI replacement",
+      "date": "Listed as a 2019 publication by PreventionWeb; official PDF hosted under November 2020; January 2026 last-checked date is not a new survey",
+      "method": "Field/geotechnical work and quantitative zonation; five classes from Stable to Critical, distinct from GSI's three classes",
+      "license": "Downloadable report; no explicit open GIS reuse licence verified",
+      "validation": "Local case studies do not independently validate the GSI 2022 district layer",
+      "assets": ["https://sdma.kerala.gov.in/wp-content/uploads/2020/11/KSDMA-REPORT.pdf"],
+      "sources": ["https://recovery.preventionweb.net/publication/documents-and-publications/landslide-susceptibility-assessment-and-preparedness"],
+      "decision": "Link as local evidence only; no digitisation, class conversion or invented GIS layer"
+    },
+    {
+      "id": "kozhikode-rf-2025",
+      "name": "2025 Kozhikode Random Forest study — previously known",
+      "geography": "Kozhikode district research study",
+      "scaleResolution": "Inputs resampled to 30 m; this is not verified 30 m ground accuracy",
+      "date": "2025 publication; GSI reference inventory accessed in 2024",
+      "method": "Random Forest; 231 reference landslide points and random non-landslide points",
+      "license": "Open article does not establish reuse rights for underlying GSI inputs or unpublished outputs",
+      "validation": "Reported ROC-AUC 0.890; independent spatial district-wide validation not established",
+      "assets": [],
+      "sources": ["https://www.mdpi.com/2073-445x/14/7/1453"],
+      "decision": "Data/layers available on reasonable request, not verified public GIS download; no requests will be sent"
+    },
+    {
+      "id": "kerala-catchments-2026",
+      "name": "2026 comparative Kerala catchment susceptibility study",
+      "geography": "Five catchments, including Kuttiyadi and Chaliyar; not identical to Kozhikode boundary",
+      "scaleResolution": "Article reports 30 m DEM and 10 m LULC; no downloadable output grid or local positional accuracy verified",
+      "date": "Published 9 March 2026; inventory sourced from GSI last updated 2023",
+      "method": "Frequency Ratio and Random Forest, five natural-break classes; 100 Kuttiyadi and 170 Chaliyar GSI landslide points; generated non-landslide points",
+      "license": "Article CC BY 4.0; no separate licence for unpublished GIS outputs or underlying GSI records established",
+      "validation": "70:30 train/test split and five-fold hyperparameter cross-validation reported; independent spatial/temporal holdout not established. Kuttiyadi RF AUC 0.96 and Chaliyar 0.87 are study metrics, not parcel accuracy",
+      "assets": [],
+      "sources": ["https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2026.1741697/full"],
+      "decision": "New research evidence only. Data statement promises availability by authors but no public GIS repository/download was verified; no contact"
+    },
+    {
+      "id": "nrsc-isro-atlas",
+      "name": "NRSC/ISRO Landslide Atlas of India and Bhuvan",
+      "geography": "National landslide-prone regions including Kerala; about 80,000 landslides, 17 states and two UTs",
+      "scaleResolution": "Multiple high/very-high-resolution image sources; no uniform Kozhikode positional accuracy or susceptibility grid established",
+      "date": "2023 atlas; inventories span 1998–2022",
+      "method": "Seasonal, event-based and route-wise inventories; selected field/news corroboration",
+      "license": "Public viewing/PDF download is not an explicit open dataset licence; no Kozhikode bulk-reuse terms verified",
+      "validation": "Some mapped landslides checked in field/news; no complete independent Kozhikode accuracy estimate established",
+      "assets": ["https://www.isro.gov.in/media_isro/pdf/LandslideAtlas_new_2023.pdf"],
+      "sources": ["https://www.isro.gov.in/Landslide_Atlas_India.html", "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php?id=landslide"],
+      "decision": "Link as inventory context; no verified openly licensed Kozhikode bulk asset to incorporate"
+    },
+    {
+      "id": "dans-2018-existing",
+      "name": "2018 Kerala initiation-point inventory — already incorporated",
+      "geography": "4,728 Kerala points; 235 inside atlas boundary, versus 228 source-labelled Kozhikode",
+      "scaleResolution": "Initiation-point locations, not runout polygons or susceptibility raster; local positional accuracy unquantified",
+      "date": "2018 monsoon events; DANS version 2.0, 2020",
+      "method": "Compiled NRSC, GSI and manual image interpretation",
+      "license": "CC BY 4.0, explicit on DANS record",
+      "validation": "Statewide 73% supported by at least two sources; completeness unquantifiable against independently complete inventory; not independent validation of GSI zones",
+      "assets": ["https://doi.org/10.17026/dans-x6c-y7x2"],
+      "sources": ["https://essd.copernicus.org/articles/12/2899/2020/", "https://research.utwente.nl/en/datasets/landslide-inventory-of-the-2018-monsoon-rainfall-in-kerala-india/"],
+      "decision": "Retain existing separate attributed historical layer and download; do not duplicate or turn into a hazard model"
+    }
+  ],
+  "repositoryScreening": [
+    {"url": "https://data.mendeley.com/datasets/jsn8cwb9nz/1", "finding": "CC BY 4.0 but 100 locations in Raigad, Maharashtra, not Kozhikode; excluded"},
+    {"url": "https://data.mendeley.com/datasets/9rj7nd4j7g/1", "finding": "CC BY 4.0; landing page does not establish Kozhikode coverage; not incorporated"},
+    {"url": "https://zenodo.org/records/17007637", "finding": "CC BY 4.0 worldwide reference imagery/inventory package; landing page/README/small PDF did not establish Kozhikode coverage; 6 GB archive not downloaded, not incorporated"},
+    {"url": "https://www.mtu.edu/news/2021/03/geological-engineers-create-landslide-atlas-of-kerala-india.html", "finding": "University announcement describes GIS-TISSA district atlas; announcement does not provide a verified openly licensed Kozhikode GIS asset, output resolution or independent local validation"}
+  ]
+}
