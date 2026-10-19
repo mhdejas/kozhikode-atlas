@@ -1,0 +1,180 @@
+{
+  "version": "2.0",
+  "schema_version": "2.0",
+  "source_doi": "https://doi.org/10.17026/dans-x6c-y7x2",
+  "dataset_title": "Landslide inventory of the 2018 monsoon rainfall in Kerala, India",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "release_date": "2020-04-06",
+  "acquisition_date_utc": "2026-10-19T15:03:58+00:00",
+  "crs": "EPSG:4326 (declared source and canonical boundary CRS; no CRS guessed)",
+  "feature_count": 235,
+  "units_time_period": "2018 monsoon rainfall; source Length/Width in m, Area in m2, RASTERVALU in degrees; point coordinates in WGS 84.",
+  "positional_accuracy": "Unknown; not stated in inspected metadata.",
+  "extraction_method": "Read declared WGS84 source points; spatially joined points within the canonical atlas.geojson Kozhikode boundary; public district label then set to Kozhikode; exported deterministic sorted 2-D GeoJSON.",
+  "qa_counts": {
+    "source_feature_count": 4728,
+    "public_feature_count": 235,
+    "invalid_geometry_count": 0,
+    "null_geometry_count": 0,
+    "geometry_covered_kozhikode_count": 235,
+    "geometry_unmatched_count": 4493,
+    "district_attribute_match_count": 228,
+    "district_attribute_unmatched_count": 4500,
+    "district_mismatch_count": 15,
+    "gsi_2022_point_class_counts": {
+      "Moderate": 89,
+      "High": 71,
+      "Low": 52,
+      "unmapped": 23
+    },
+    "gsi_2022_point_unmapped_count": 23
+  },
+  "district_mismatches": [
+    {
+      "record_id": "kerala2018-no-00378-row-0377",
+      "source_no": 378,
+      "source_district_label": "Kozhikode",
+      "geometry_district_label": null
+    },
+    {
+      "record_id": "kerala2018-no-00380-row-0379",
+      "source_no": 380,
+      "source_district_label": "Kozhikode",
+      "geometry_district_label": null
+    },
+    {
+      "record_id": "kerala2018-no-00462-row-0460",
+      "source_no": 462,
+      "source_district_label": "Kozhikode",
+      "geometry_district_label": null
+    },
+    {
+      "record_id": "kerala2018-no-00556-row-0554",
+      "source_no": 556,
+      "source_district_label": "Kozhikode",
+      "geometry_district_label": null
+    },
+    {
+      "record_id": "kerala2018-no-00635-row-0633",
+      "source_no": 635,
+      "source_district_label": "Malappuram",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-00738-row-0736",
+      "source_no": 738,
+      "source_district_label": "Malappuram",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-00746-row-0744",
+      "source_no": 746,
+      "source_district_label": "Malappuram",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-00747-row-0745",
+      "source_no": 747,
+      "source_district_label": "Malappuram",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-00897-row-0893",
+      "source_no": 897,
+      "source_district_label": "Malappuram",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02179-row-2172",
+      "source_no": 2179,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02182-row-2175",
+      "source_no": 2182,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02185-row-2178",
+      "source_no": 2185,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02211-row-2204",
+      "source_no": 2211,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02213-row-2206",
+      "source_no": 2213,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    },
+    {
+      "record_id": "kerala2018-no-02236-row-2229",
+      "source_no": 2236,
+      "source_district_label": "Wayanad",
+      "geometry_district_label": "Kozhikode"
+    }
+  ],
+  "source_district_labels_in_mismatches": [
+    "Kozhikode",
+    "Malappuram",
+    "Wayanad"
+  ],
+  "type_code_expansions": {
+    "DF": "debris flow",
+    "SS": "surficial slide",
+    "RF": "rock fall"
+  },
+  "canonical_boundary": {
+    "canonical_source": "site/data/atlas.geojson feature kind=boundary name=Kozhikode",
+    "crs": "EPSG:4326",
+    "geometry_hash_sha256": "197bfc20c84d03c5e2db97e9f745d3386d69af7a64a8012b6acd0676dc883fc4",
+    "prior_kerala_region_geometry_hash_sha256": "197bfc20c84d03c5e2db97e9f745d3386d69af7a64a8012b6acd0676dc883fc4",
+    "prior_geom_identical": true
+  },
+  "sha_file_manifest": [
+    {
+      "filename": "Kerela landslide.shp",
+      "sha1": "869d03f878b1ac92fd95f02a543c43f492569366",
+      "bytes": 208132
+    },
+    {
+      "filename": "Kerela landslide.dbf",
+      "sha1": "d4985bb1ec7d7301bb596a061ad849a348deb1e0",
+      "bytes": 13811162
+    },
+    {
+      "filename": "Kerela landslide.shx",
+      "sha1": "a871c4d4a11f913718b8b2c87e912b13242aba03",
+      "bytes": 37924
+    },
+    {
+      "filename": "Kerela landslide.prj",
+      "sha1": "86813d76269ab91b40ed3e67a86745bd933124e0",
+      "bytes": 145
+    },
+    {
+      "filename": "Kerela landslide.cpg",
+      "sha1": "663b90c899fa25a111067be0c22ffc64dcf581c2",
+      "bytes": 5
+    },
+    {
+      "filename": "metadata.pdf",
+      "sha1": "d80db16b1aca588e755261324c7b367206401e99",
+      "bytes": 161350
+    },
+    {
+      "filename": "Kerela landslide.xml",
+      "sha1": "4761e3175e2eddb649193d7d5fa0b36d21cc5a74",
+      "bytes": 1356
+    }
+  ],
+  "attribution": "C.J. van Westen, University of Twente; DANS Data Station Physical and Technical Sciences; CC BY 4.0."
+}

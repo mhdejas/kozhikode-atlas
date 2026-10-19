@@ -1,0 +1,51 @@
+{
+  "title": "Kozhikode Atlas compact geographic data",
+  "created": "2026-10-19",
+  "crs": "EPSG:4326",
+  "bbox_wgs84": [
+    75.53652,
+    11.12271,
+    76.14788,
+    11.80564
+  ],
+  "datasets": [
+    {
+      "name": "Kozhikode district boundary",
+      "kind": "boundary",
+      "source": "geoBoundaries gbOpen",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM2/geoBoundaries-IND-ADM2.geojson",
+      "metadata_url": "https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/",
+      "license": "CC BY 4.0 for gbOpen; source metadata reports ODbL 1.0",
+      "date": "2021 represented; build Dec 12 2023",
+      "resolution": "ADM2 polygon, 1 feature",
+      "processing": "Selected shapeName Kozhikode; validated and clipped only at native boundary.",
+      "limitations": "Boundary is not a cadastral/legal survey; source metadata lists Pathways Data Pvt. Ltd. and lgdirectory.gov.in."
+    },
+    {
+      "name": "OSM settlements, roads, rivers, coastline",
+      "kind": "settlement, road, river, coast",
+      "source": "OpenStreetMap contributors via Overpass API",
+      "url": "https://overpass-api.de/api/interpreter",
+      "license": "ODbL 1.0",
+      "date": "2026-10-19",
+      "resolution": "OSM objects in Kozhikode bbox; query recorded in scripts/acquire.py",
+      "processing": "Queried nodes/ways, intersected to district polygon, removed exact duplicate geometries, simplified linear features by 35 m in projected EPSG:32643 (UTM 43N), then returned to EPSG:4326 for compact delivery.",
+      "limitations": "OSM coverage, tags and positional accuracy vary; this is not authoritative transport or hydrography. Coastline is included only because OSM coastline ways were acquired; no coastline feature was invented."
+    }
+  ],
+  "counts": {
+    "boundary": 1,
+    "settlement": 238,
+    "road": 1934,
+    "river": 8189,
+    "coast": 75
+  },
+  "feature_count": 10437,
+  "size_bytes": 3016652,
+  "attribution": "Kozhikode boundary: geoBoundaries; OSM features: © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "validation": {
+    "all_geometries_valid": true,
+    "all_features_epsg4326": true,
+    "exact_duplicate_geometries_removed": true
+  }
+}

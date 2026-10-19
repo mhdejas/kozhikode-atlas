@@ -1,0 +1,387 @@
+{
+  "title": "Kozhikode landslide evidence and precision limits",
+  "checkedUTC": "2026-10-19T15:54:37.353227+00:00",
+  "verdict": "Public-source review: no verified higher-detail, openly reusable replacement was found in the sources checked. Retain regional GSI zones and the separate licensed 2018 observations; do not claim greater precision.",
+  "sections": [
+    {
+      "title": "Public-source-only result: no verified precision upgrade",
+      "paragraphs": [
+        "The public sources checked do not establish an additional higher-detail, openly reusable Kozhikode susceptibility layer or local inventory suitable for this atlas. No new susceptibility model or layer has been created. This is a result of the sources checked, not proof that no finer dataset exists.",
+        "GSI\u2019s named 1:10,000 Kattipara\u2013Chamal\u2013Vettiyozhijathottam sector remains a programme lead, not a verified completed download. The official 2025 announcement of 160 completed meso-scale sectors is a national total and does not identify this Kozhikode sector.",
+        "The downloadable Thiruvambadi local report is listed as a 2019 publication. Its January 2026 PreventionWeb last-checked date is not a new survey. It is a separate five-class study, not the completed GSI sector product; no openly licensed GIS supplement was verified.",
+        "A newly checked March 2026 study covers Kuttiyadi and Chaliyar among five Kerala catchments, using Frequency Ratio and Random Forest. It reports a 30 m DEM, 10 m land cover and GSI inventory updated in 2023. These input postings do not establish output accuracy. Its 70:30 split and five-fold tuning do not establish an independent spatial/temporal validation; its data statement promises availability by the authors but no public GIS download was verified. No data request will be sent.",
+        "NRSC/ISRO\u2019s 2023 Atlas documents roughly 80,000 landslides from 1998\u20132022 and links to Bhuvan viewing, not a verified openly licensed Kozhikode bulk asset. Zenodo, Figshare and Mendeley checks did not establish another suitable local asset; a clearly licensed Raigad dataset is outside Kozhikode, and global packages without verified local coverage were not substituted.",
+        "Retain the existing separate, attributed CC BY 4.0 layer of 235 recorded 2018 initiation points. Historical observations add evidence, not property-scale predictions. Public access and open-article licensing do not automatically license source data. GSI export safeguards remain unchanged."
+      ],
+      "sources": [
+        {
+          "label": "GSI named sector: taken up, not completion evidence",
+          "url": "https://bhusanket.gsi.gov.in/Landslide_Hazard_pdf/Mesoscale%20Landslide%20Susceptibility%20Mapping%20-%20SOP%20of%20GSI.cleaned.pdf"
+        },
+        {
+          "label": "160 completed sectors nationally, not named Kozhikode coverage",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420"
+        },
+        {
+          "label": "Thiruvambadi report: 2019 publication, later index check",
+          "url": "https://recovery.preventionweb.net/publication/documents-and-publications/landslide-susceptibility-assessment-and-preparedness"
+        },
+        {
+          "label": "2026 catchment study: methods, validation and data statement",
+          "url": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2026.1741697/full"
+        },
+        {
+          "label": "NRSC/ISRO inventory coverage and PDF",
+          "url": "https://www.isro.gov.in/Landslide_Atlas_India.html"
+        },
+        {
+          "label": "Bhuvan public inventory viewer",
+          "url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php?id=landslide"
+        },
+        {
+          "label": "Existing openly licensed historical inventory",
+          "url": "https://doi.org/10.17026/dans-x6c-y7x2"
+        }
+      ]
+    },
+    {
+      "title": "Regional zones, not property precision",
+      "paragraphs": [
+        "GSI\u2019s official data policy identifies National Landslide Susceptibility Mapping (NLSM) at 1:50,000. The national programme describes High, Moderate and Low as relative likelihood of landslide initiation. These are not annual probabilities, rainfall thresholds, runout zones or safe-land categories.",
+        "The supplied Kozhikode shapefile does not declare the original raster cell size, local positional accuracy, minimum mapping unit or district model thresholds. Programme scale and screen pixel size are different things: sharper rendering cannot establish finer source accuracy.",
+        "The atlas retains the source classes on its existing approximately 100 m display/query grid. Near a class edge, a clicked cell samples its centre, not the exact clicked location. There is no quantified source error band; a displayed edge is not a surveyed safety boundary."
+      ],
+      "sources": [
+        {
+          "label": "GSI policy, section 7.6: NLSM at 1:50,000",
+          "url": "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf"
+        },
+        {
+          "label": "Official class definitions and regional-planning purpose",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420"
+        }
+      ]
+    },
+    {
+      "title": "What the dates actually mean",
+      "paragraphs": [
+        "The source map is labelled GSI Bhukosh, April 2022. The download\u2019s XML records raster-to-polygon conversion on 12 August 2025, UTM zone 44N to 43N projection and district clipping on 14 August, and class dissolve on 15 August. Those are derivative-processing dates, not new field observations.",
+        "Input CRS: WGS 84 / UTM zone 43N (EPSG:32643), horizontal metres. Atlas display/query CRS: Web Mercator (EPSG:3857). The three multipart source features represent classes, not three landslides. Invalid polygons were repaired before clipping; source SHA-256 and repair accounting remain in the provenance record."
+      ],
+      "sources": [
+        {
+          "label": "KSDMA official source ZIP and map links",
+          "url": "https://sdma.kerala.gov.in/hazard-maps/"
+        }
+      ]
+    },
+    {
+      "title": "Finer local mapping exists as a lead, not a verified replacement",
+      "paragraphs": [
+        "GSI\u2019s 2021 meso-scale SOP lists 1:10,000 mapping in and around Kattipara, Chamal and Vettiyozhijathottam in Kozhikode, marked \u201cTaken up in FS 2020-21\u201d. A completed public report, downloadable GIS layer and reuse permission for that sector have not been established here. It is not evidence of district-wide 1:10,000 coverage.",
+        "The older KSDMA report includes Thiruvambadi local mapping, geotechnical case studies and a separate five-class quantitative zonation. It is not the method or validation report for the GSI 2022 three-class layer. KSDMA now says GSI replaces the older NCESS susceptibility map in its publications.",
+        "A 2025 Kozhikode random-forest paper reports 231 reference landslide points, 30 m resampled inputs and ROC-AUC 0.890. AUC is discrimination, not \u201c89% of parcels correct\u201d. Its layers/code are available on request; no spatially independent district-wide validation is established here. It is a research lead, not a verified replacement raster."
+      ],
+      "sources": [
+        {
+          "label": "GSI meso-scale SOP and Kozhikode sector entry",
+          "url": "https://bhusanket.gsi.gov.in/Landslide_Hazard_pdf/Mesoscale%20Landslide%20Susceptibility%20Mapping%20-%20SOP%20of%20GSI.cleaned.pdf"
+        },
+        {
+          "label": "KSDMA local study",
+          "url": "https://sdma.kerala.gov.in/wp-content/uploads/2020/11/KSDMA-REPORT.pdf"
+        },
+        {
+          "label": "2025 Kozhikode study and data-availability statement",
+          "url": "https://www.mdpi.com/2073-445x/14/7/1453"
+        }
+      ]
+    },
+    {
+      "title": "Coverage is not the same as safety",
+      "paragraphs": [
+        "Using the atlas reference boundary and vector areas in UTM 43N, approximately 858 km\u00b2 (36.2%) is covered by the supplied GSI classes; approximately 1510 km\u00b2 is outside those supplied classes. This is data coverage within this boundary, not the percentage of district land at risk or safe.",
+        "Grey remains explicitly unmapped. Low does not mean safe. Debris can travel beyond initiation zones, and source/boundary differences contribute to gaps. Neither present rainfall nor soil saturation is included."
+      ],
+      "sources": [
+        {
+          "label": "Official distribution and reference-purpose map caveat",
+          "url": "https://sdma.kerala.gov.in/hazard-maps/"
+        }
+      ]
+    },
+    {
+      "title": "Historical evidence adds detail, not a hazard forecast",
+      "paragraphs": [
+        "The added 2018 event layer is the van Westen/Hao and colleagues compiled inventory: 4,728 Kerala initiation points, assembled from NRSC image mapping, GSI field records and manual image interpretation. DANS version 2.0 explicitly licenses the dataset CC BY 4.0. The atlas uses only points covered by its district boundary, preserving source IDs and recording district-label mismatches.",
+        "The peer-reviewed paper reports 3,452 of 4,728 records (73%) supported by at least two sources, and notes completeness cannot be quantified against an independently complete inventory. This is a statewide corroboration statement, not Kozhikode positional accuracy or prediction accuracy.",
+        "The inventory includes GSI/NRSC records and predates the GSI 2022 snapshot. Comparing it to GSI zones is descriptive, not independent validation. Points are initiation locations, not affected-area polygons or runout footprints. Small, obscured or unreported failures may be missing; no points does not mean no hazard.",
+        "Boundary audit: 235 points lie inside the atlas boundary, while 228 source records are labelled Kozhikode. There are 15 symmetric selection discrepancies: 11 inside points carry other district labels, and 4 Kozhikode-labelled points lie outside. Original labels and IDs are recorded in provenance; the atlas does not claim these boundary or coordinate differences are resolved.",
+        "Descriptive overlap only: 71 historical points intersect supplied High zones, 89 Moderate, 52 Low and 23 fall outside the supplied zones. This is not a validation score or a spatial/temporal holdout test; event/reference-source overlap and uncertain mapping dates prevent that claim. It reinforces why Low and unmapped cannot mean safe."
+      ],
+      "sources": [
+        {
+          "label": "DANS version 2.0, files and CC BY 4.0 licence",
+          "url": "https://doi.org/10.17026/dans-x6c-y7x2"
+        },
+        {
+          "label": "Inventory methods, verification and completeness limits",
+          "url": "https://essd.copernicus.org/articles/12/2899/2020/"
+        },
+        {
+          "label": "ISRO Landslide Atlas: complementary multi-event inventory",
+          "url": "https://www.isro.gov.in/Landslide_Atlas_India.html"
+        }
+      ]
+    },
+    {
+      "title": "Inputs that can support a defensible next analysis",
+      "paragraphs": [
+        "Terrain: Copernicus GLO-30 has approximately 30 m posting and is a surface model (DSM), including canopy/buildings; its nominal vertical reference is EGM2008. The current atlas slope is derived on a coarser 90 m metric grid, not native 30 m slope or bare-earth site terrain. Seek a documented bare-earth DTM and field checks for local slope/drainage decisions; do not route hydrology over an unexamined DSM.",
+        "Rainfall: IMD\u2019s 0.25\u00b0 daily grid is in mm/day and is roughly 25\u201328 km across here. GPM IMERG is 0.1\u00b0 (~10 km), with half-hourly and aggregated products; product-specific units must be checked. These support event/antecedent rainfall analysis, not property-scale rainfall. Use quality-controlled local gauges for calibration, and research Final Run IMERG rather than confusing it with a live warning.",
+        "Geology and soil: seek GSI 1:50,000 geological layers with explicit permission and actual local NBSS&LUP coverage. A portal offering 1:10,000 products does not prove Kozhikode coverage. Rock strength, weathered-soil thickness, cut slopes, drainage and pore-pressure observations remain field-evidence gaps.",
+        "Before any finer predictive layer: use deduplicated event records, documented geolocation uncertainty and independent later-event or field observations; separate training and test spatial blocks; test scale and terrain sensitivity; report precision/recall, calibration, area-normalised capture and uncertainty. Unmapped cells are not absences. No new weights, hotspot inference or machine-learning susceptibility model has been added."
+      ],
+      "sources": [
+        {
+          "label": "Copernicus DEM product and DSM limitations",
+          "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+        },
+        {
+          "label": "IMD daily 0.25\u00b0 rainfall",
+          "url": "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_NetCDF.html"
+        },
+        {
+          "label": "NASA GPM IMERG",
+          "url": "https://gpm.nasa.gov/data/imerg"
+        },
+        {
+          "label": "GSI geology/data-access policy",
+          "url": "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf"
+        },
+        {
+          "label": "NBSS&LUP soil coverage discovery",
+          "url": "https://bhoomigeoportal-nbsslup.in/"
+        }
+      ]
+    },
+    {
+      "title": "Reuse remains a real gate",
+      "paragraphs": [
+        "The KSDMA district ZIP has no explicit open reuse licence. GSI\u2019s 2019 policy retains copyright and limits transmission of digital products. The exact permission applying to this KSDMA derivative is unresolved: a public download is not an open licence. The atlas displays these zones for exploration, without claiming official status or web-display and redistribution permission. Attribution and this caveat do not grant permission.",
+        "GSI-layer map exports are withheld until written derivative-display and redistribution permission is obtained. Other atlas exports remain available; the historical 2018 CC BY layer is offered separately as attributed GeoJSON. The historical overlay is not included in current map exports, so an export does not silently claim to contain those observations.",
+        "This work continues with public online sources only: no further emails, calls, messages, forms or institutional outreach. A future public release would need a downloadable completed layer, exact coverage and date, source scale/resolution, method, independent validation and explicit web-display/redistribution terms before incorporation. Until those public evidence gates are met, this atlas cannot responsibly promise finer hazard precision."
+      ],
+      "sources": [
+        {
+          "label": "GSI copyright and licensing policy",
+          "url": "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf"
+        },
+        {
+          "label": "KSDMA public source downloads",
+          "url": "https://sdma.kerala.gov.in/hazard-maps/"
+        }
+      ]
+    }
+  ],
+  "metricCoverage": {
+    "analysisCrs": "EPSG:32643",
+    "units": "km\u00b2",
+    "atlasBoundaryAreaKm2": 2367.7516865834573,
+    "mappedUnionAreaKm2": 858.1774601600049,
+    "unmappedAreaKm2": 1509.5742264234461,
+    "mappedFraction": 0.36244402866345765,
+    "classAreasKm2": {
+      "High": 184.08069290970153,
+      "Low": 315.8294888372572,
+      "Moderate": 358.2672784130477
+    },
+    "note": "Area within the atlas reference boundary, not official legal district area. Coverage only, not risk/exposure or safe land. Areas measured from vector geometry, not pixel counts."
+  },
+  "inventorySelection": {
+    "source_feature_count": 4728,
+    "public_feature_count": 235,
+    "invalid_geometry_count": 0,
+    "null_geometry_count": 0,
+    "geometry_covered_kozhikode_count": 235,
+    "geometry_unmatched_count": 4493,
+    "district_attribute_match_count": 228,
+    "district_attribute_unmatched_count": 4500,
+    "district_mismatch_count": 15,
+    "gsi_2022_point_class_counts": {
+      "Moderate": 89,
+      "High": 71,
+      "Low": 52,
+      "unmapped": 23
+    },
+    "gsi_2022_point_unmapped_count": 23
+  },
+  "sources": {
+    "ksdma": "https://sdma.kerala.gov.in/hazard-maps/",
+    "policy": "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf",
+    "pib": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420",
+    "sop": "https://bhusanket.gsi.gov.in/Landslide_Hazard_pdf/Mesoscale%20Landslide%20Susceptibility%20Mapping%20-%20SOP%20of%20GSI.cleaned.pdf",
+    "local": "https://sdma.kerala.gov.in/wp-content/uploads/2020/11/KSDMA-REPORT.pdf",
+    "inventory": "https://doi.org/10.17026/dans-x6c-y7x2",
+    "paper": "https://essd.copernicus.org/articles/12/2899/2020/",
+    "study": "https://www.mdpi.com/2073-445x/14/7/1453",
+    "nrsc": "https://www.isro.gov.in/Landslide_Atlas_India.html",
+    "catchments": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2026.1741697/full",
+    "thiruvambadi": "https://recovery.preventionweb.net/publication/documents-and-publications/landslide-susceptibility-assessment-and-preparedness",
+    "bhuvan": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php?id=landslide",
+    "imd": "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_NetCDF.html",
+    "imerg": "https://gpm.nasa.gov/data/imerg",
+    "dem": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+    "soils": "https://bhoomigeoportal-nbsslup.in/"
+  },
+  "sourceScale": "1:50,000 GSI NLSM programme scale (official policy); supplied district derivative does not declare original raster cell size or positional accuracy. ~100 m atlas query cells are display sampling, not accuracy.",
+  "newSusceptibilityModel": false,
+  "permanentGsiRedistributionCleared": false,
+  "pipeline": "scripts/prepare_landslides.py \u2192 scripts/prepare_landslide_inventory.py \u2192 scripts/annotate_landslide_research.py",
+  "publicSourceReview": {
+    "checkedDate": "2026-10-19",
+    "researchMode": "Public online sources only; no emails, calls, messages, forms or institutional outreach.",
+    "conclusion": "No additional higher-detail susceptibility layer or local inventory met all geography, downloadable-asset, explicit-reuse and documented-quality gates in the public sources checked. This is a search result, not proof that no such dataset exists.",
+    "newLayerAdded": false,
+    "candidates": [
+      {
+        "id": "gsi-regional-existing",
+        "name": "KSDMA-hosted GSI Kozhikode susceptibility zones \u2014 already in atlas",
+        "geography": "Kozhikode district derivative; incomplete coverage inside atlas reference boundary",
+        "scaleResolution": "NLSM programme 1:50,000; source raster cell size, minimum mapping unit and local positional accuracy not disclosed in ZIP",
+        "date": "GSI April 2022 snapshot; derivative processing 12\u201315 August 2025",
+        "method": "Public XML documents RasterToPolygon, projection, clip and dissolve, not the underlying susceptibility model",
+        "license": "No explicit open reuse licence in district ZIP; GSI copyright/reuse restrictions remain unresolved",
+        "validation": "No district-specific independent validation established",
+        "assets": [
+          "https://sdma.kerala.gov.in/wp-content/uploads/2025/08/Kozhikode.zip"
+        ],
+        "sources": [
+          "https://sdma.kerala.gov.in/hazard-maps/",
+          "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf"
+        ],
+        "decision": "Existing regional exploratory layer only; no precision upgrade or export clearance"
+      },
+      {
+        "id": "gsi-meso-sector",
+        "name": "GSI Kattipara\u2013Chamal\u2013Vettiyozhijathottam sector",
+        "geography": "Named local sector in Kozhikode, not district-wide coverage; final extent unverified",
+        "scaleResolution": "1:10,000 programme entry; final pixel size and positional accuracy unverified",
+        "date": "SOP marks Taken up in FS 2020\u201321; no verified completion date",
+        "method": "Meso-scale SOP; completed sector-specific model/report not located",
+        "license": "No product-specific open reuse terms verified",
+        "validation": "No final sector validation located",
+        "assets": [],
+        "sources": [
+          "https://bhusanket.gsi.gov.in/Landslide_Hazard_pdf/Mesoscale%20Landslide%20Susceptibility%20Mapping%20-%20SOP%20of%20GSI.cleaned.pdf",
+          "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420"
+        ],
+        "decision": "Lead only. PIB's 160 completed meso-scale sectors nationally does not identify this sector"
+      },
+      {
+        "id": "thiruvambadi-report",
+        "name": "KSDMA Thiruvambadi susceptibility and preparedness report",
+        "geography": "Thiruvambadi Grama Panchayath, wards and case-study locations in Kozhikode",
+        "scaleResolution": "Report maps do not establish a source raster resolution or verified 1:10,000 GSI replacement",
+        "date": "Listed as a 2019 publication by PreventionWeb; official PDF hosted under November 2020; January 2026 last-checked date is not a new survey",
+        "method": "Field/geotechnical work and quantitative zonation; five classes from Stable to Critical, distinct from GSI's three classes",
+        "license": "Downloadable report; no explicit open GIS reuse licence verified",
+        "validation": "Local case studies do not independently validate the GSI 2022 district layer",
+        "assets": [
+          "https://sdma.kerala.gov.in/wp-content/uploads/2020/11/KSDMA-REPORT.pdf"
+        ],
+        "sources": [
+          "https://recovery.preventionweb.net/publication/documents-and-publications/landslide-susceptibility-assessment-and-preparedness"
+        ],
+        "decision": "Link as local evidence only; no digitisation, class conversion or invented GIS layer"
+      },
+      {
+        "id": "kozhikode-rf-2025",
+        "name": "2025 Kozhikode Random Forest study \u2014 previously known",
+        "geography": "Kozhikode district research study",
+        "scaleResolution": "Inputs resampled to 30 m; this is not verified 30 m ground accuracy",
+        "date": "2025 publication; GSI reference inventory accessed in 2024",
+        "method": "Random Forest; 231 reference landslide points and random non-landslide points",
+        "license": "Open article does not establish reuse rights for underlying GSI inputs or unpublished outputs",
+        "validation": "Reported ROC-AUC 0.890; independent spatial district-wide validation not established",
+        "assets": [],
+        "sources": [
+          "https://www.mdpi.com/2073-445x/14/7/1453"
+        ],
+        "decision": "Data/layers available on reasonable request, not verified public GIS download; no requests will be sent"
+      },
+      {
+        "id": "kerala-catchments-2026",
+        "name": "2026 comparative Kerala catchment susceptibility study",
+        "geography": "Five catchments, including Kuttiyadi and Chaliyar; not identical to Kozhikode boundary",
+        "scaleResolution": "Article reports 30 m DEM and 10 m LULC; no downloadable output grid or local positional accuracy verified",
+        "date": "Published 9 March 2026; inventory sourced from GSI last updated 2023",
+        "method": "Frequency Ratio and Random Forest, five natural-break classes; 100 Kuttiyadi and 170 Chaliyar GSI landslide points; generated non-landslide points",
+        "license": "Article CC BY 4.0; no separate licence for unpublished GIS outputs or underlying GSI records established",
+        "validation": "70:30 train/test split and five-fold hyperparameter cross-validation reported; independent spatial/temporal holdout not established. Kuttiyadi RF AUC 0.96 and Chaliyar 0.87 are study metrics, not parcel accuracy",
+        "assets": [],
+        "sources": [
+          "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2026.1741697/full"
+        ],
+        "decision": "New research evidence only. Data statement promises availability by authors but no public GIS repository/download was verified; no contact"
+      },
+      {
+        "id": "nrsc-isro-atlas",
+        "name": "NRSC/ISRO Landslide Atlas of India and Bhuvan",
+        "geography": "National landslide-prone regions including Kerala; about 80,000 landslides, 17 states and two UTs",
+        "scaleResolution": "Multiple high/very-high-resolution image sources; no uniform Kozhikode positional accuracy or susceptibility grid established",
+        "date": "2023 atlas; inventories span 1998\u20132022",
+        "method": "Seasonal, event-based and route-wise inventories; selected field/news corroboration",
+        "license": "Public viewing/PDF download is not an explicit open dataset licence; no Kozhikode bulk-reuse terms verified",
+        "validation": "Some mapped landslides checked in field/news; no complete independent Kozhikode accuracy estimate established",
+        "assets": [
+          "https://www.isro.gov.in/media_isro/pdf/LandslideAtlas_new_2023.pdf"
+        ],
+        "sources": [
+          "https://www.isro.gov.in/Landslide_Atlas_India.html",
+          "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php?id=landslide"
+        ],
+        "decision": "Link as inventory context; no verified openly licensed Kozhikode bulk asset to incorporate"
+      },
+      {
+        "id": "dans-2018-existing",
+        "name": "2018 Kerala initiation-point inventory \u2014 already incorporated",
+        "geography": "4,728 Kerala points; 235 inside atlas boundary, versus 228 source-labelled Kozhikode",
+        "scaleResolution": "Initiation-point locations, not runout polygons or susceptibility raster; local positional accuracy unquantified",
+        "date": "2018 monsoon events; DANS version 2.0, 2020",
+        "method": "Compiled NRSC, GSI and manual image interpretation",
+        "license": "CC BY 4.0, explicit on DANS record",
+        "validation": "Statewide 73% supported by at least two sources; completeness unquantifiable against independently complete inventory; not independent validation of GSI zones",
+        "assets": [
+          "https://doi.org/10.17026/dans-x6c-y7x2"
+        ],
+        "sources": [
+          "https://essd.copernicus.org/articles/12/2899/2020/",
+          "https://research.utwente.nl/en/datasets/landslide-inventory-of-the-2018-monsoon-rainfall-in-kerala-india/"
+        ],
+        "decision": "Retain existing separate attributed historical layer and download; do not duplicate or turn into a hazard model"
+      }
+    ],
+    "repositoryScreening": [
+      {
+        "url": "https://data.mendeley.com/datasets/jsn8cwb9nz/1",
+        "finding": "CC BY 4.0 but 100 locations in Raigad, Maharashtra, not Kozhikode; excluded"
+      },
+      {
+        "url": "https://data.mendeley.com/datasets/9rj7nd4j7g/1",
+        "finding": "CC BY 4.0; landing page does not establish Kozhikode coverage; not incorporated"
+      },
+      {
+        "url": "https://zenodo.org/records/17007637",
+        "finding": "CC BY 4.0 worldwide reference imagery/inventory package; landing page/README/small PDF did not establish Kozhikode coverage; 6 GB archive not downloaded, not incorporated"
+      },
+      {
+        "url": "https://www.mtu.edu/news/2021/03/geological-engineers-create-landslide-atlas-of-kerala-india.html",
+        "finding": "University announcement describes GIS-TISSA district atlas; announcement does not provide a verified openly licensed Kozhikode GIS asset, output resolution or independent local validation"
+      }
+    ]
+  },
+  "outreachPermitted": false,
+  "rightsNotice": "GSI web-display and redistribution rights remain unresolved. Source attribution, this caveat and owner approval do not grant permission. Public download is not an open reuse licence; GSI source rights are retained. No written permission is claimed; GSI map exports remain withheld.",
+  "rightsNoticeFile": "GSI_RIGHTS.md"
+}

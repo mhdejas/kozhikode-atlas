@@ -1,0 +1,405 @@
+{
+  "layers": [
+    {
+      "id": "elevation",
+      "title": "Elevation (m)",
+      "image": "thematic-elevation.png",
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "legend": [
+        {
+          "label": "0\u201350 m",
+          "color": "#440154"
+        },
+        {
+          "label": "50\u2013200 m",
+          "color": "#3b528b"
+        },
+        {
+          "label": "200\u2013500 m",
+          "color": "#21918c"
+        },
+        {
+          "label": "500\u20131000 m",
+          "color": "#5ec962"
+        },
+        {
+          "label": "\u22651000 m",
+          "color": "#fde725"
+        }
+      ],
+      "source": "Copernicus DEM GLO-30 Public (2021 release; DSM, EGM2008 heights)",
+      "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+      "license": "Copernicus DEM free public license",
+      "period": "2021 release",
+      "resolution": "~30 m original; ~100 m display",
+      "method": "Mosaicked Copernicus N11 E075 and N11 E076 COGs; bilinear warp to EPSG:3857 ~100 m display grid; fixed non-negative elevation bins; district mask; exact RGBA PNG",
+      "limitations": "geoBoundaries-IND-ADM2 Kozhikode polygon; DSM includes vegetation/buildings; negative source values are transparent, not placed in the lowest bin.",
+      "inputCrs": "EPSG:4326",
+      "displayCrs": "EPSG:3857",
+      "stats": {
+        "validPixels": 248483,
+        "totalPixels": 528456,
+        "validFraction": 0.4702056557215738,
+        "min": 0.0,
+        "max": 2319.30615234375
+      },
+      "attribution": "produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved"
+    },
+    {
+      "id": "slope",
+      "title": "Slope (degrees)",
+      "image": "thematic-slope.png",
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "legend": [
+        {
+          "label": "0\u20135\u00b0",
+          "color": "#edf8fb"
+        },
+        {
+          "label": "5\u201315\u00b0",
+          "color": "#b2e2e2"
+        },
+        {
+          "label": "15\u201330\u00b0",
+          "color": "#66c2a4"
+        },
+        {
+          "label": "\u226530\u00b0",
+          "color": "#238b45"
+        }
+      ],
+      "source": "Derived from Copernicus DEM GLO-30 Public",
+      "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+      "license": "Copernicus DEM free public license",
+      "period": "2021 release",
+      "resolution": "~30 m original DEM; 90 m metric analysis; ~100 m display",
+      "method": "DEM bilinear warp to EPSG:32643 at 90 m; finite-difference slope in metres; categorical result nearest-warped to EPSG:3857 ~100 m display grid; district mask; exact RGBA PNG",
+      "limitations": "geoBoundaries-IND-ADM2 Kozhikode polygon; derived from DSM, not bare-earth DTM; no hydrological conditioning.",
+      "inputCrs": "EPSG:4326",
+      "displayCrs": "EPSG:3857",
+      "analysisCrs": "EPSG:32643",
+      "analysisResolution": "90 m",
+      "stats": {
+        "validPixels": 248483,
+        "totalPixels": 528456,
+        "validFraction": 0.4702056557215738,
+        "min": 0.0,
+        "max": 65.40680694580078
+      },
+      "attribution": "produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved"
+    },
+    {
+      "id": "landcover",
+      "title": "Land cover",
+      "image": "thematic-landcover.png",
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "legend": [
+        {
+          "label": "10 \u2014 Tree cover",
+          "color": "#009e73"
+        },
+        {
+          "label": "20 \u2014 Shrubland",
+          "color": "#f0e442"
+        },
+        {
+          "label": "30 \u2014 Grassland",
+          "color": "#ccebc5"
+        },
+        {
+          "label": "40 \u2014 Cropland",
+          "color": "#e69f00"
+        },
+        {
+          "label": "50 \u2014 Built-up",
+          "color": "#cc79a7"
+        },
+        {
+          "label": "60 \u2014 Bare / sparse vegetation",
+          "color": "#bdbdbd"
+        },
+        {
+          "label": "80 \u2014 Permanent water",
+          "color": "#0072b2"
+        },
+        {
+          "label": "90 \u2014 Herbaceous wetland",
+          "color": "#56b4e9"
+        },
+        {
+          "label": "95 \u2014 Mangroves",
+          "color": "#8c510a"
+        }
+      ],
+      "source": "ESA WorldCover 10 m 2021 v200",
+      "sourceUrl": "https://esa-worldcover.org/en/data-access",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "period": "2021",
+      "resolution": "10 m original; ~100 m display",
+      "method": "Nearest warp from WorldCover categorical COG to EPSG:3857 ~100 m display grid; district mask; noData transparent; class 95 explicitly mapped to Mangroves; exact RGBA PNG",
+      "limitations": "geoBoundaries-IND-ADM2 Kozhikode polygon; only classes present in the masked raster are shown; product thematic accuracy varies by class and region.",
+      "inputCrs": "EPSG:4326",
+      "displayCrs": "EPSG:3857",
+      "classCodes": {
+        "10": "Tree cover",
+        "20": "Shrubland",
+        "30": "Grassland",
+        "40": "Cropland",
+        "50": "Built-up",
+        "60": "Bare / sparse vegetation",
+        "80": "Permanent water",
+        "90": "Herbaceous wetland",
+        "95": "Mangroves"
+      },
+      "stats": {
+        "presentClasses": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          80,
+          90,
+          95
+        ],
+        "validPixels": 248483,
+        "totalPixels": 528456,
+        "validFraction": 0.4702056557215738
+      }
+    },
+    {
+      "id": "urban",
+      "title": "Urban change \u00b7 2019\u20132025",
+      "image": "urban-after.png",
+      "beforeImage": "urban-before.png",
+      "afterImage": "urban-after.png",
+      "gainImage": "urban-candidates.png",
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "legend": [
+        {
+          "label": "Candidate built-up gain",
+          "color": "#d55e00"
+        },
+        {
+          "label": "Persistent high built signal",
+          "color": "#5b5967"
+        },
+        {
+          "label": "Candidate built-up loss",
+          "color": "#0072b2"
+        },
+        {
+          "label": "Other assessed pixels",
+          "color": "#f4f1e6"
+        },
+        {
+          "label": "Insufficient observations",
+          "color": "#bfbfbf"
+        }
+      ],
+      "source": "Harmonized Sentinel-2 L2A / Cloud Score+ / Dynamic World V1; computed with Google Earth Engine",
+      "sourceUrl": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1",
+      "license": "Copernicus Sentinel Data Terms; Dynamic World and Cloud Score+ CC BY 4.0",
+      "attribution": "Contains modified Copernicus Sentinel data 2019, 2025. Dynamic World produced by Google in partnership with National Geographic Society and the World Resources Institute.",
+      "period": "1 January\u201331 March 2019 compared with 1 January\u201331 March 2025",
+      "resolution": "10 m source RGB and model probabilities; 20 m aligned display grid",
+      "method": "Matched-season median surface-reflectance RGB; cs_cdf \u22650.60 plus SCL masks; \u22653 observations/date. Identical 0\u20130.30 reflectance stretch, gamma 1.2. Candidate gain: seasonal mean built probability \u22640.20 in 2019 and \u22650.60 in 2025; \u22659 connected display pixels. Common RGB coverage 100.0%; jointly assessed signal coverage 100.0%. Web visualizations use one shared 127-colour indexed PNG palette for both dates; analytical COG values are unchanged.",
+      "limitations": "Candidate model signals, not verified new buildings or an urban-area estimate. Seasonal land management, exposed soil, haze, mixed pixels and classification errors can appear as change. Independent positional RMSE and ground-reference accuracy not measured. No-data is explicit; display is not native-resolution building detection.",
+      "inputCrs": "Sentinel-2 MGRS UTM granules; see urban-provenance.json",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 3403,
+        "height": 3879,
+        "transform": [
+          19.998907990413198,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -19.99781467370514,
+          1323596.918078772
+        ],
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "nominalDisplayMetres": 20
+      },
+      "stats": {
+        "inDistrictDisplayPixels": 6206639,
+        "commonRGBPixels": 6206639,
+        "commonRGBFraction": 1.0,
+        "commonAnalysisPixels": 6206639,
+        "commonAnalysisFraction": 1.0,
+        "perDateRGBValidPixels": {
+          "2019": 6206639,
+          "2025": 6206639
+        },
+        "perDateDWValidPixels": {
+          "2019": 6206639,
+          "2025": 6206639
+        },
+        "signalClassPixels": {
+          "1": 0,
+          "2": 5948996,
+          "3": 255016,
+          "4": 219,
+          "5": 2408
+        },
+        "rawGainSensitivityPixelsBeforeMMU": {
+          "0.5": 15021,
+          "0.6": 4224,
+          "0.7": 530
+        },
+        "reflectanceDNPercentiles": {
+          "2019": [
+            184.0,
+            473.0,
+            1097.0
+          ],
+          "2025": [
+            170.0,
+            464.0,
+            1095.0
+          ]
+        },
+        "registration": "Same explicit export grid verified; independent sub-pixel tie-point RMSE not measured.",
+        "validation": "No independent stratified ground-reference sample; candidate signals are not confirmed urban expansion.",
+        "scalarCrossCheck": {
+          "location": [
+            75.8,
+            11.3
+          ],
+          "serverRGBCount2019": 14,
+          "localRGBCount2019": 14,
+          "agrees": true
+        }
+      },
+      "provenanceFile": "urban-provenance.json",
+      "webEncoding": "Indexed PNG: 127 shared RGB colours, no dithering, transparent index 255; spatial grid unchanged"
+    },
+    {
+      "id": "landslide",
+      "title": "Landslide susceptibility \u00b7 GSI zones",
+      "image": "landslide-susceptibility.png",
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "legend": [
+        {
+          "label": "Low susceptibility",
+          "color": "#fff7bc"
+        },
+        {
+          "label": "Moderate susceptibility",
+          "color": "#fec44f"
+        },
+        {
+          "label": "High susceptibility",
+          "color": "#993404"
+        },
+        {
+          "label": "Not mapped in source \u00b7 not safe by default",
+          "color": "#d6dce0"
+        }
+      ],
+      "source": "Geological Survey of India (GSI), via KSDMA",
+      "sourceUrl": "https://sdma.kerala.gov.in/hazard-maps/",
+      "license": "GSI web-display and redistribution rights remain unresolved. Source attribution, this caveat and owner approval do not grant permission. Public download is not an open reuse licence; GSI source rights are retained. No written permission is claimed; GSI map exports remain withheld.",
+      "period": "GSI/Bhukosh April 2022 source snapshot; KSDMA derivative processed 12\u201315 August 2025 (not a 2025 survey)",
+      "resolution": "1:50,000 GSI NLSM programme scale (official policy); supplied district derivative does not declare original raster cell size or positional accuracy. ~100 m atlas query cells are display sampling, not accuracy.",
+      "method": "Native UTM43N polygon repair and district clip; pixel-centre categorical rasterization on shared query grid. Source Low, Moderate and High labels retained unchanged; no DEM-derived prediction or weighting.",
+      "limitations": "Relative susceptibility zones, not numerical probabilities, live warnings or a site-safety assessment. Low does not mean safe. Grey is not mapped in the supplied source, not zero susceptibility. No current rainfall, soil saturation or field validation is added. Debris runout can affect land beyond mapped zones. The source and atlas district boundaries differ; source gaps are retained. Display cells generalise zone edges. Consult KSDMA and local authorities for current warnings and qualified specialists for site decisions.",
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "coverage": "Kozhikode district; mapped source zones plus explicitly unmapped district cells",
+      "attribution": "Geological Survey of India, 2022 / Kerala State Disaster Management Authority. Atlas display adaptation, not an official warning product.",
+      "provenanceFile": "landslide-provenance.json",
+      "stats": {
+        "validPixels": 248483,
+        "totalPixels": 528456,
+        "validFraction": 0.4702056557215738,
+        "unmappedDistrictPixels": 158396,
+        "note": "Visible coverage includes explicit unmapped grey cells; pixel counts are not area estimates."
+      },
+      "metricCoverage": {
+        "analysisCrs": "EPSG:32643",
+        "units": "km\u00b2",
+        "atlasBoundaryAreaKm2": 2367.7516865834573,
+        "mappedUnionAreaKm2": 858.1774601600049,
+        "unmappedAreaKm2": 1509.5742264234461,
+        "mappedFraction": 0.36244402866345765,
+        "classAreasKm2": {
+          "High": 184.08069290970153,
+          "Low": 315.8294888372572,
+          "Moderate": 358.2672784130477
+        },
+        "note": "Area within the atlas reference boundary, not official legal district area. Coverage only, not risk/exposure or safe land. Areas measured from vector geometry, not pixel counts."
+      },
+      "researchFile": "landslide-research.json",
+      "rightsStatus": "unresolved",
+      "rightsNoticeFile": "GSI_RIGHTS.md",
+      "permanentGsiRedistributionCleared": false
+    }
+  ],
+  "generated": "2026-10-19",
+  "displayGrid": {
+    "crs": "EPSG:3857",
+    "pixelSizeMetres": 100,
+    "width": 681,
+    "height": 776,
+    "bounds3857": [
+      8408686.942695925,
+      1246025.3949594698,
+      8476743.226587301,
+      1323596.918078772
+    ]
+  },
+  "coverage": "geoBoundaries-IND-ADM2 Kozhikode polygon"
+}

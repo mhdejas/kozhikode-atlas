@@ -1,0 +1,238 @@
+{
+  "sourceUrl": "https://sdma.kerala.gov.in/hazard-maps/",
+  "downloadUrl": "https://sdma.kerala.gov.in/wp-content/uploads/2025/08/Kozhikode.zip",
+  "officialMapUrl": "https://sdma.kerala.gov.in/wp-content/uploads/2025/06/Landslide_Susceptibility_Zones_Districts_FINAL.pdf",
+  "sourceSHA256": "7afa02ce8897fe59a6ee1d3465bda625acac69846da777592f3212be9946e312",
+  "retrievedUTC": "2026-10-19T14:43:35.822150+00:00",
+  "sourcePeriod": "GSI/Bhukosh April 2022 source snapshot; KSDMA derivative processed 12\u201315 August 2025 (not a 2025 survey)",
+  "inputCrs": "EPSG:32643",
+  "sourceFeatureCount": 3,
+  "sourceField": "Susceptibi",
+  "geometryAccounting": [
+    {
+      "class": "High",
+      "invalidBefore": true,
+      "areaBeforeRepairM2": 184623267.47705725,
+      "areaAfterRepairM2": 184623267.47705734,
+      "areaAfterDistrictClipM2": 184080692.90970153
+    },
+    {
+      "class": "Low",
+      "invalidBefore": true,
+      "areaBeforeRepairM2": 316562637.98583186,
+      "areaAfterRepairM2": 316562637.9858308,
+      "areaAfterDistrictClipM2": 315829488.8372572
+    },
+    {
+      "class": "Moderate",
+      "invalidBefore": true,
+      "areaBeforeRepairM2": 359231120.4258716,
+      "areaAfterRepairM2": 359231120.4258712,
+      "areaAfterDistrictClipM2": 358267278.4130477
+    }
+  ],
+  "grid": {
+    "crs": "EPSG:3857",
+    "bounds3857": [
+      8408686.942695925,
+      1246025.3949594698,
+      8476743.226587301,
+      1323596.918078772
+    ],
+    "width": 681,
+    "height": 776,
+    "transform": [
+      99.93580600789443,
+      0.0,
+      8408686.942695925,
+      0.0,
+      -99.96330298879154,
+      1323596.918078772,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixelSize": [
+      99.93580600789443,
+      99.96330298879154
+    ],
+    "note": "Values are sampled from the existing ~100 m query grid, not native 10 m measurements."
+  },
+  "classCodes": {
+    "1": "Low",
+    "2": "Moderate",
+    "3": "High",
+    "4": "Not mapped in source"
+  },
+  "colors": {
+    "1": "#fff7bc",
+    "2": "#fec44f",
+    "3": "#993404",
+    "4": "#d6dce0"
+  },
+  "pixelCounts": {
+    "Low": 33183,
+    "Moderate": 37612,
+    "High": 19292,
+    "Not mapped in source": 158396
+  },
+  "overlappingClassPixelCentres": 0,
+  "overlapRule": "If source classes overlap at a pixel centre, High overrides Moderate overrides Low; conflicts recorded, not blended.",
+  "displayNotAreaEstimate": true,
+  "sampleChecks": [
+    {
+      "classCode": 1,
+      "class": "Low",
+      "row": 238,
+      "column": 328,
+      "longitude": 75.83142713656387,
+      "latitude": 11.595920987949421
+    },
+    {
+      "classCode": 1,
+      "class": "Low",
+      "row": 307,
+      "column": 338,
+      "longitude": 75.84040452276065,
+      "latitude": 11.535218044775485
+    },
+    {
+      "classCode": 1,
+      "class": "Low",
+      "row": 418,
+      "column": 530,
+      "longitude": 76.01277033773863,
+      "latitude": 11.437537964156299
+    },
+    {
+      "classCode": 2,
+      "class": "Moderate",
+      "row": 174,
+      "column": 239,
+      "longitude": 75.75152839941262,
+      "latitude": 11.652213374144809
+    },
+    {
+      "classCode": 2,
+      "class": "Moderate",
+      "row": 305,
+      "column": 296,
+      "longitude": 75.80269950073422,
+      "latitude": 11.536977735444248
+    },
+    {
+      "classCode": 2,
+      "class": "Moderate",
+      "row": 424,
+      "column": 553,
+      "longitude": 76.0334183259912,
+      "latitude": 11.432256997214369
+    },
+    {
+      "classCode": 3,
+      "class": "High",
+      "row": 131,
+      "column": 248,
+      "longitude": 75.75960804698971,
+      "latitude": 11.690028419853643
+    },
+    {
+      "classCode": 3,
+      "class": "High",
+      "row": 275,
+      "column": 430,
+      "longitude": 75.92299647577092,
+      "latitude": 11.563371770781162
+    },
+    {
+      "classCode": 3,
+      "class": "High",
+      "row": 380,
+      "column": 604,
+      "longitude": 76.07920299559471,
+      "latitude": 11.47098179952114
+    },
+    {
+      "classCode": 4,
+      "class": "Not mapped in source",
+      "row": 262,
+      "column": 125,
+      "longitude": 75.64918619676946,
+      "latitude": 11.57480841390186
+    },
+    {
+      "classCode": 4,
+      "class": "Not mapped in source",
+      "row": 409,
+      "column": 317,
+      "longitude": 75.82155201174743,
+      "latitude": 11.4454592299138
+    },
+    {
+      "classCode": 4,
+      "class": "Not mapped in source",
+      "row": 533,
+      "column": 323,
+      "longitude": 75.82693844346548,
+      "latitude": 11.336302337133656
+    }
+  ],
+  "method": "Native UTM43N polygon repair and district clip; pixel-centre categorical rasterization on shared query grid. Source Low, Moderate and High labels retained unchanged; no DEM-derived prediction or weighting.",
+  "limitations": "Relative susceptibility zones, not numerical probabilities, live warnings or a site-safety assessment. Low does not mean safe. Grey is not mapped in the supplied source, not zero susceptibility. No current rainfall, soil saturation or field validation is added. Debris runout can affect land beyond mapped zones. The source and atlas district boundaries differ; source gaps are retained. Display cells generalise zone edges. Consult KSDMA and local authorities for current warnings and qualified specialists for site decisions.",
+  "license": "GSI web-display and redistribution rights remain unresolved. Source attribution, this caveat and owner approval do not grant permission. Public download is not an open reuse licence; GSI source rights are retained. No written permission is claimed; GSI map exports remain withheld.",
+  "attribution": "Geological Survey of India, 2022 / Kerala State Disaster Management Authority. Atlas display adaptation, not an official warning product.",
+  "sourceScale": "1:50,000 GSI NLSM programme scale (official policy); supplied district derivative does not declare original raster cell size or positional accuracy. ~100 m atlas query cells are display sampling, not accuracy.",
+  "pipeline": "scripts/prepare_landslides.py",
+  "sourceScaleEvidence": {
+    "url": "https://geodataindia.gov.in/assets/Document_Pdf/4.%20Data%20Dissemination%20policy%202019.pdf",
+    "section": "7.6 NLSM data on 1:50K scale",
+    "corroboratingUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2158420",
+    "scope": "Programme-level scale. No finer scale established for this derivative."
+  },
+  "sourceLineage": [
+    {
+      "tool": "RasterToPolygon",
+      "date": "20250812",
+      "operation": "Converted susceptibility raster classes to polygons using the Susceptibi class field."
+    },
+    {
+      "tool": "Project",
+      "date": "20250814",
+      "operation": "Projected source polygons from UTM zone 44N to UTM zone 43N."
+    },
+    {
+      "tool": "Clip",
+      "date": "20250814",
+      "operation": "Clipped projected polygons to the source district boundary."
+    },
+    {
+      "tool": "Dissolve",
+      "date": "20250815",
+      "operation": "Dissolved district polygons by susceptibility class."
+    }
+  ],
+  "metricCoverage": {
+    "analysisCrs": "EPSG:32643",
+    "units": "km\u00b2",
+    "atlasBoundaryAreaKm2": 2367.7516865834573,
+    "mappedUnionAreaKm2": 858.1774601600049,
+    "unmappedAreaKm2": 1509.5742264234461,
+    "mappedFraction": 0.36244402866345765,
+    "classAreasKm2": {
+      "High": 184.08069290970153,
+      "Low": 315.8294888372572,
+      "Moderate": 358.2672784130477
+    },
+    "note": "Area within the atlas reference boundary, not official legal district area. Coverage only, not risk/exposure or safe land. Areas measured from vector geometry, not pixel counts."
+  },
+  "validation": {
+    "atlasChecks": "Geometry repair, CRS, no class-overlap pixel centres and 12 source-membership samples. These test data handling, not predictive skill.",
+    "independentKozhikodeValidation": "Not established: no district confusion matrix, positional accuracy or class-threshold report found.",
+    "historicalInventoryNotIndependent": "2018 inventory includes GSI and NRSC records, predates 2022 baseline and is incomplete. Overlay agreement is not predictive accuracy."
+  },
+  "researchFile": "landslide-research.json",
+  "rightsStatus": "unresolved",
+  "rightsNoticeFile": "GSI_RIGHTS.md",
+  "permanentGsiRedistributionCleared": false,
+  "sourceLineageNote": "Tool names and dates retained from public upstream metadata. Machine-specific upstream Windows paths omitted as unnecessary workstation detail."
+}

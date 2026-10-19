@@ -1,0 +1,32 @@
+{
+  "dataset": "Kerala regional opening locator boundary",
+  "source": "geoBoundaries gbOpen India ADM1 (Kerala) plus existing Kozhikode district feature",
+  "urls": {
+    "official_api": "https://www.geoboundaries.org/api/current/gbOpen/IND/ADM1/",
+    "download_geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM1/geoBoundaries-IND-ADM1.geojson",
+    "existing_district": "site/data/atlas.geojson"
+  },
+  "license": "Creative Commons Attribution 2.5 India (CC BY 2.5 IN) for geoBoundaries ADM1 source; existing Kozhikode feature retains its atlas attribution/source field.",
+  "version": {
+    "geoBoundaries_release_commit": "9469f09",
+    "boundaryID": "IND-ADM1-1811400",
+    "boundaryYearRepresented": "2011",
+    "buildDate": "2023-12-12",
+    "admUnitCount": 36
+  },
+  "acquired_date": "2026-10-19",
+  "processing": {
+    "input_crs": "EPSG:4326 / lon-lat GeoJSON",
+    "metric_crs": "EPSG:32643 (WGS 84 / UTM zone 43N)",
+    "state_filter": "shapeName == Kerala",
+    "simplification": "Kerala ADM1 only; Douglas-Peucker tolerance 500 metres, preserve_topology=True; district copied from atlas unchanged",
+    "output_crs": "EPSG:4326 (GeoJSON lon-lat)",
+    "output_features": 2,
+    "input_sha256": "47aa0acb6f69868daee49143276f3ce323f18905ba7d38d0a86816b405028736"
+  },
+  "limitations": [
+    "ADM1 source represents 2011 state/UT boundaries and is not a current administrative legal survey.",
+    "500 m simplification is intended for regional opening-map display, not cadastral or legal measurement.",
+    "Kozhikode district geometry is the existing atlas feature and was not replaced or edited."
+  ]
+}

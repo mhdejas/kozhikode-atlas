@@ -1,0 +1,229 @@
+{
+  "portraits": [
+    {
+      "name": "K. Jayanth",
+      "aliases": [
+        "ADV.K JAYANTH"
+      ],
+      "photo": "data/portraits/k-jayanth.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kozhikode_North_MLA.png",
+      "credit": "Joyaljosephmarch1999 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-08-09",
+      "reusable": true,
+      "rightsNote": "Identity described on Commons as K Jayanth MLA; local copy is a 500px Commons thumbnail derivative. Attribution and ShareAlike required; no changes made.",
+      "aliasesVerified": true
+    },
+    {
+      "name": "K. Praveen Kumar",
+      "aliases": [
+        "ADV. K. PRAVEEN KUMAR"
+      ],
+      "photo": "data/portraits/k-praveen-kumar.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K._Praveen_Kumar.jpg",
+      "credit": "Nineesha8 / Wikimedia Commons",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2026-04-01",
+      "reusable": true,
+      "rightsNote": "Commons description identifies Adv. K. Praveen Kumar as Kozhikode DCC president and Koyilandy MLA; local copy is a 500px Commons thumbnail derivative. CC0 dedication.",
+      "aliasesVerified": true
+    },
+    {
+      "name": "P. K. Firos",
+      "aliases": [
+        "P K FIROS"
+      ],
+      "photo": "data/portraits/pk-firos.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PK_FIROS.jpg",
+      "credit": "Msp7com / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2021-04-05",
+      "reusable": true,
+      "rightsNote": "Commons identity/category metadata identifies P.K. Firos, Kerala IUML politician; local copy is a 500px Commons thumbnail derivative. Attribution and ShareAlike required; no changes made.",
+      "aliasesVerified": true
+    },
+    {
+      "name": "A. Pradeep Kumar",
+      "aliases": [
+        "A. PRADEEP KUMAR",
+        "A PRADEEP KUMAR",
+        "PRADEEP KUMAR"
+      ],
+      "photo": "data/portraits/a-pradeep-kumar.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pradeep_Kumar_MLA.jpg",
+      "credit": "Vengolis / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2017-11-04",
+      "reusable": true,
+      "rightsNote": "Identity cross-checked against Commons-linked Wikidata Q24055573 (A. Pradeepkumar) and the election archive's Kozhikode North entries; local copy is a 500px Commons thumbnail derivative. Attribution and ShareAlike required; no changes made.",
+      "aliasesVerified": true
+    },
+    {
+      "name": "A. K. Saseendran",
+      "aliases": [
+        "A.K. SASEENDRAN",
+        "A K SASEENDRAN",
+        "A .K Saseendran"
+      ],
+      "photo": "data/portraits/a-k-saseendran.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A.K._Saseendran.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-04",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "T. P. Ramakrishnan",
+      "aliases": [
+        "T. P. RAMAKRISHNAN",
+        "T.P.  RAMAKRISHNAN",
+        "T.P.RAMAKRISHNAN"
+      ],
+      "photo": "data/portraits/t-p-ramakrishnan.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:T.P._Ramakrishnan.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-04",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "M. K. Muneer",
+      "aliases": [
+        "DR. M.K MUNEER",
+        "DR. M.K. MUNEER",
+        "DR. M.K.MUNEER"
+      ],
+      "photo": "data/portraits/m-k-muneer.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MK_Muneer.jpg",
+      "credit": "Syed Shiyaz Mirza / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-03-19",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "Elamaram Kareem",
+      "aliases": [
+        "ELAMARAM KAREEM"
+      ],
+      "photo": "data/portraits/elamaram-kareem.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elamaram_Kareem.png",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2011-03-23",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "C. K. Nanu",
+      "aliases": [
+        "C.K.NANU"
+      ],
+      "photo": "data/portraits/c-k-nanu.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:C.K._Nanu.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-01",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "K. K. Lathika",
+      "aliases": [
+        "K.K. LATHIKA",
+        "K.K.LATHIKA"
+      ],
+      "photo": "data/portraits/k-k-lathika.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K.K._Lathika.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-03",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "Purushan Kadalundi",
+      "aliases": [
+        "PURUSHAN KADALUNDI",
+        "PURUSHUAN KADALUNDI"
+      ],
+      "photo": "data/portraits/purushan-kadalundi.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Purushan_Kadalundi.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-04",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "P. T. A. Rahim",
+      "aliases": [
+        "P.T.A. RAHIM",
+        "ADV.P.T.A.RAHIM",
+        "ADV. P. T. A RAHIM",
+        "ADV.P T A RAHIM"
+      ],
+      "photo": "data/portraits/p-t-a-rahim.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P.T.A._Rahim.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-04",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "K. Dasan",
+      "aliases": [
+        "K.DASAN",
+        "K. DASAN"
+      ],
+      "photo": "data/portraits/k-dasan.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K._Dasan.jpg",
+      "credit": "LDF Kerala / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2020-07-03",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    },
+    {
+      "name": "K. P. Kunhammed Kutty Master",
+      "aliases": [
+        "K P KUNHAMMED KUTTY MASTER"
+      ],
+      "photo": "data/portraits/k-p-kunhammed-kutty.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K_P_Kunjahammed_Kutty.jpg",
+      "credit": "Erfanebrahimsait / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2022-06-25",
+      "reusable": true,
+      "aliasesVerified": true,
+      "rightsNote": "Identity matched to the election archive's exact candidate name(s); local copy is a Wikimedia Commons thumbnail derivative. Attribution and ShareAlike required."
+    }
+  ],
+  "coverageNote": "14 reusable Wikimedia Commons photographs with per-image creator credit, source, licence and date. Other candidates have no bundled portrait. Rights-retained official profile image URLs are omitted."
+}

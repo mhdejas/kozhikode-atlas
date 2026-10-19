@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "grid": {
+    "crs": "EPSG:3857",
+    "bounds3857": [
+      8408686.942695925,
+      1246025.3949594698,
+      8476743.226587301,
+      1323596.918078772
+    ],
+    "width": 681,
+    "height": 776,
+    "transform": [
+      99.93580600789443,
+      0.0,
+      8408686.942695925,
+      0.0,
+      -99.96330298879154,
+      1323596.918078772,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pixelSize": [
+      99.93580600789443,
+      99.96330298879154
+    ],
+    "note": "Values are sampled from the existing ~100 m query grid, not native 10 m measurements."
+  },
+  "datasets": {
+    "elevation": {
+      "image": "inspector-elevation.png",
+      "encoding": "uint16",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 65535,
+      "units": "m",
+      "method": "rounded to integer metres from the existing shared-grid display raster",
+      "source": "Copernicus DEM GLO-30 Public (2021 release; DSM, EGM2008 heights)",
+      "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+      "period": "2021 release",
+      "date": "2021 release",
+      "resolution": "~30 m original; ~100 m display",
+      "provenance": {
+        "input": "raw/thematic/elevation_display_3857.tif",
+        "source": "Copernicus DEM GLO-30 Public (2021 release; DSM, EGM2008 heights)",
+        "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+        "date": "2021 release",
+        "resolution": "~30 m original; ~100 m display",
+        "method": "Mosaicked Copernicus N11 E075 and N11 E076 COGs; bilinear warp to EPSG:3857 ~100 m display grid; fixed non-negative elevation bins; district mask; exact RGBA PNG",
+        "displayValues": "~100 m query grid; not native 10 m data"
+      }
+    },
+    "slope": {
+      "image": "inspector-slope.png",
+      "encoding": "uint16",
+      "scale": 0.01,
+      "offset": 0,
+      "nodata": 65535,
+      "units": "degrees",
+      "method": "rounded to 0.01 degree from the existing shared-grid display raster",
+      "source": "Derived from Copernicus DEM GLO-30 Public",
+      "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+      "period": "2021 release",
+      "date": "2021 release",
+      "resolution": "~30 m original DEM; 90 m metric analysis; ~100 m display",
+      "provenance": {
+        "input": "raw/thematic/slope_display_3857.tif",
+        "source": "Derived from Copernicus DEM GLO-30 Public",
+        "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+        "date": "2021 release",
+        "resolution": "~30 m original DEM; 90 m metric analysis; ~100 m display",
+        "method": "DEM bilinear warp to EPSG:32643 at 90 m; finite-difference slope in metres; categorical result nearest-warped to EPSG:3857 ~100 m display grid; district mask; exact RGBA PNG",
+        "displayValues": "~100 m query grid; not native 10 m data"
+      }
+    },
+    "landcover": {
+      "image": "inspector-landcover.png",
+      "encoding": "uint8",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 0,
+      "units": "ESA WorldCover class code",
+      "method": "copied class code from the existing shared-grid display raster",
+      "classCodes": {
+        "10": "Tree cover",
+        "20": "Shrubland",
+        "30": "Grassland",
+        "40": "Cropland",
+        "50": "Built-up",
+        "60": "Bare / sparse vegetation",
+        "80": "Permanent water",
+        "90": "Herbaceous wetland",
+        "95": "Mangroves"
+      },
+      "source": "ESA WorldCover 10 m 2021 v200",
+      "sourceUrl": "https://esa-worldcover.org/en/data-access",
+      "period": "2021",
+      "date": "2021",
+      "resolution": "10 m original; ~100 m display",
+      "provenance": {
+        "input": "raw/thematic/landcover_display_3857.tif",
+        "source": "ESA WorldCover 10 m 2021 v200",
+        "sourceUrl": "https://esa-worldcover.org/en/data-access",
+        "date": "2021",
+        "resolution": "10 m original; ~100 m display",
+        "method": "Nearest warp from WorldCover categorical COG to EPSG:3857 ~100 m display grid; district mask; noData transparent; class 95 explicitly mapped to Mangroves; exact RGBA PNG",
+        "displayValues": "~100 m query grid; not native 10 m data"
+      }
+    },
+    "landslide": {
+      "image": "inspector-landslide.png",
+      "encoding": "uint8",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 0,
+      "units": "GSI susceptibility class (not probability)",
+      "classCodes": {
+        "1": "Low",
+        "2": "Moderate",
+        "3": "High",
+        "4": "Not mapped in source"
+      },
+      "source": "Geological Survey of India (GSI), via KSDMA",
+      "sourceUrl": "https://sdma.kerala.gov.in/hazard-maps/",
+      "period": "GSI/Bhukosh April 2022 source snapshot; KSDMA derivative processed 12\u201315 August 2025 (not a 2025 survey)",
+      "date": "GSI 2022",
+      "resolution": "1:50,000 GSI NLSM programme scale (official policy); supplied district derivative does not declare original raster cell size or positional accuracy. ~100 m atlas query cells are display sampling, not accuracy.",
+      "method": "Native UTM43N polygon repair and district clip; pixel-centre categorical rasterization on shared query grid.",
+      "sourceScale": "1:50,000 NLSM regional programme; see scale evidence in provenance",
+      "accuracy": "No district-specific independent accuracy estimate established.",
+      "rights": "GSI web-display and redistribution rights remain unresolved. Source attribution, this caveat and owner approval do not grant permission. Public download is not an open reuse licence; GSI source rights are retained. No written permission is claimed; GSI map exports remain withheld.",
+      "rightsNoticeFile": "GSI_RIGHTS.md",
+      "attribution": "Geological Survey of India, 2022 / Kerala State Disaster Management Authority. Atlas display adaptation, not an official warning product."
+    }
+  }
+}
