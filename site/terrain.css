@@ -1,0 +1,57 @@
+/* A single purposeful 3D focal point: Kozhikode's real coast-to-Ghats relief. */
+.intro{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(480px,1.25fr);padding:24px 32px 18px;gap:36px;align-items:center}
+.intro h1{font-size:clamp(38px,3.6vw,58px);line-height:1.06;margin:12px 0 17px;max-width:450px}
+.intro p{font-size:15px;line-height:1.75;max-width:420px}
+.hero-place{display:flex;align-items:center;gap:12px;margin:23px 0 0;color:var(--muted);font-size:12px}
+.hero-place>span:first-child{font-size:21px;color:var(--green)}
+.hero-place>span:last-child{border-left:1px solid #bcd1d8;padding-left:12px;line-height:1.65}
+.hero-link{display:inline-flex;align-items:center;gap:9px;min-height:44px;margin-top:19px;text-decoration:none;color:var(--green);font-weight:650;font-size:14px}
+.hero-link svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7}
+.terrain-card{position:relative;background:#102e3e;color:#e9f6fa;border-radius:16px;overflow:hidden;border:1px solid #254d5c;box-shadow:0 8px 28px #163b4914;min-width:0;isolation:isolate}
+.terrain-heading{position:absolute;z-index:3;left:19px;top:15px;right:19px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none}
+.terrain-heading h2{font-size:13px;font-weight:550;letter-spacing:0;margin:0;color:#effaff;display:flex;align-items:center;gap:8px}
+.terrain-heading h2:before{content:'';width:6px;height:6px;background:#84d5d1;border-radius:50%}
+.terrain-badge{font-size:10px;color:#c0dce6;border:1px solid #41606d;border-radius:12px;padding:3px 8px;background:#153747bd}
+.terrain-viewport{height:284px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 80%,#254657,#102e3e 68%)}
+.terrain-viewport canvas{display:block;width:100%;height:100%;outline-offset:-4px;cursor:grab;touch-action:pan-y}
+.terrain-viewport canvas:active{cursor:grabbing}
+.terrain-viewport.is-interactive canvas{touch-action:none}
+.terrain-loading{position:absolute;inset:0;z-index:2;display:grid;place-items:center;font-size:13px;color:#c1e1e9;background:#102e3e}
+.terrain-loading[hidden]{display:none}
+.terrain-fallback-note{position:absolute;right:16px;top:47px;z-index:2;font-size:10px;color:#b9d4df;pointer-events:none}
+.terrain-hint{position:absolute;bottom:11px;left:18px;font-size:11px;color:#bed9e3;pointer-events:none;line-height:1.6}
+.terrain-hint kbd{font:inherit;border:1px solid #50707b;border-radius:3px;padding:1px 4px}
+.terrain-legend{position:absolute;right:15px;bottom:12px;z-index:2;display:flex;flex-direction:column;gap:4px;font-size:10px;line-height:1.35;color:#d8eaf0;background:#102e3ebf;padding:8px;border-radius:5px}
+.terrain-legend strong{font-size:10px;font-weight:500;margin-bottom:3px}
+.terrain-legend span{display:flex;align-items:center;gap:7px}
+.terrain-legend i{display:block;width:12px;height:7px;border-radius:1px;background:var(--swatch)}
+.terrain-controls{display:flex;align-items:center;gap:6px;padding:10px 13px;background:#153747;border-top:1px solid #2c4e5d;flex-wrap:wrap}
+.terrain-controls button{min-height:36px;padding:7px 10px;border:1px solid #4b6976;color:#e9f5f8;border-radius:5px;font-size:11px;background:#1b4152;white-space:nowrap}
+.terrain-controls button:hover{background:#2a5669;color:white;border-color:#8db8c9}
+.terrain-controls button[aria-pressed="true"]{background:#bce6e7;color:#133847;border-color:#bce6e7}
+.terrain-controls label{margin:0 0 0 auto;display:flex;align-items:center;gap:7px;font-size:11px;color:#d5e8ef;white-space:nowrap}
+.terrain-controls input{width:70px;accent-color:#9bdddb;min-height:30px}
+.terrain-controls output{font-variant-numeric:tabular-nums;min-width:23px}
+.terrain-credit{padding:8px 15px 10px;background:#153747;color:#b9d4df;font-size:10px;line-height:1.6;border-top:1px solid #2b4d5a}
+.terrain-credit a{color:#d2eff5;text-decoration:underline;text-underline-offset:2px}
+.terrain-credit .terrain-data-note{display:block}
+.terrain-rotation{display:flex;gap:5px}
+.terrain-static{display:block;width:100%;height:100%;object-fit:contain;padding:30px 55px}
+@media(min-width:761px) and (max-height:760px){.intro{padding:18px 28px 14px;gap:28px;grid-template-columns:minmax(260px,.85fr) minmax(460px,1.3fr)}.intro h1{font-size:43px;margin:8px 0 13px}.intro p{font-size:13px;max-width:360px;line-height:1.75}.hero-place{margin-top:15px}.hero-link{margin-top:12px;font-size:13px}.terrain-viewport{height:246px}.terrain-credit{font-size:10px}.workspace{min-height:480px;height:calc(100dvh - 515px)}}
+@media(max-width:1100px){.intro{grid-template-columns:minmax(220px,.75fr) minmax(420px,1.2fr);gap:22px;padding:22px 24px 18px}.intro h1{font-size:41px}.intro p{font-size:14px}.hero-place{flex-wrap:wrap;gap:8px}.terrain-controls label{flex-basis:100%;justify-content:flex-end}.terrain-viewport{height:275px}.terrain-hint{font-size:10px}}
+@media(max-width:760px){.intro{display:flex;flex-direction:column;align-items:stretch;gap:20px;padding:22px 16px 16px}.intro h1{font-size:38px;max-width:none;margin:8px 0 11px}.intro p{font-size:14px;max-width:540px;line-height:1.65}.hero-place{display:none}.hero-link{margin:9px 0 0;font-size:13px;min-height:44px}.terrain-card{border-radius:12px}.terrain-viewport{height:300px}.terrain-heading{left:14px;right:12px;top:14px}.terrain-heading h2{font-size:12px}.terrain-badge{font-size:9px}.terrain-legend{right:10px;bottom:12px;font-size:10px;padding:7px}.terrain-hint{left:12px;font-size:10px;max-width:165px;bottom:13px}.terrain-controls{padding:9px;gap:6px}.terrain-controls button{min-height:44px;font-size:11px;padding:8px 9px}.terrain-controls label{flex-basis:auto;margin-left:auto;font-size:12px}.terrain-controls input{min-height:36px;width:72px}.terrain-credit{font-size:11px;padding:9px 12px;line-height:1.6}.terrain-fallback-note{right:13px;font-size:9px}.explore-shortcuts{padding:0 16px 16px}.workspace{height:700px}.terrain-card + p{font-size:12px}}
+@media(max-width:380px){.terrain-controls label{flex-basis:100%;justify-content:space-between;margin-top:3px}.terrain-controls input{width:130px}.terrain-viewport{height:275px}.terrain-hint{max-width:140px}.terrain-heading h2{font-size:11px}}
+@media(prefers-reduced-motion:no-preference){
+ .terrain-card{animation:terrain-enter .55s cubic-bezier(.2,.8,.2,1) both}
+ @keyframes terrain-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+ dialog[open]{animation:dialog-enter .2s ease-out}
+ @keyframes dialog-enter{from{opacity:0;transform:translateY(7px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+ .theme-card{transition:transform .18s ease-out,background-color .18s,border-color .18s}
+ .theme-card:active{transform:scale(.985)}
+ .hero-link svg{transition:transform .2s ease-out}.hero-link:hover svg{transform:translateY(3px)}
+ .terrain-controls button:active{transform:translateY(1px)}
+}
+@media(prefers-reduced-motion:reduce){.terrain-card,dialog[open]{animation:none}.theme-card,.hero-link svg{transition:none!important}}
+@media print{.terrain-card,.hero-place,.hero-link{display:none!important}}
+
+.intro[hidden],.explore-shortcuts[hidden]{display:none!important}
