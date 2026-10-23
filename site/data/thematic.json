@@ -386,6 +386,351 @@
       "rightsStatus": "unresolved",
       "rightsNoticeFile": "GSI_RIGHTS.md",
       "permanentGsiRedistributionCleared": false
+    },
+    {
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 1362,
+        "height": 1552,
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "transform": [
+          49.967903003947214,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -49.98165149439577,
+          1323596.918078772
+        ],
+        "pixelSizeMetres": 50,
+        "note": "Atlas display bounds at twice the base resolution."
+      },
+      "provenanceFile": "floods/provenance.json",
+      "project": "https://github.com/mhdejas/earthsim-omega",
+      "official": false,
+      "id": "flood-2018",
+      "title": "Flood seen by radar \u00b7 14 Aug 2018",
+      "image": "floods/flood-2018.png",
+      "legend": [
+        {
+          "label": "Newly flooded open water",
+          "color": "#d1495b"
+        },
+        {
+          "label": "Normal river, lake or backwater",
+          "color": "#5b8fb9"
+        },
+        {
+          "label": "Not seen by this radar pass",
+          "color": "#b9b9b9"
+        }
+      ],
+      "evidence": "observed",
+      "source": "Sentinel-1 RTC radar, 14 Aug 2018 pass (EARTHSIM-Omega flood detection)",
+      "sourceUrl": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+      "license": "Copernicus Sentinel data terms (free, full and open)",
+      "period": "14 Aug 2018",
+      "resolution": "30 m analysis; 50 m display (a cell shows flooding if any 30 m pixel inside it did)",
+      "method": "VV backscatter drop of at least 3 dB against same-orbit dry-season references and post-event backscatter below \u221215 dB; permanent water from the dry-season references.",
+      "limitations": "Observed open water at one moment only. Radar misses water under trees, between buildings and at the true peak; areas without colour were not seen to flood, which does not mean they stayed dry or are safe. The 14 Aug 2018 pass came before the 14\u201316 Aug rain peak, so the extent is a lower bound.",
+      "attribution": "Contains modified Copernicus Sentinel data 2018\u20132019, processed by EARTHSIM-Omega from Microsoft Planetary Computer Sentinel-1 RTC.",
+      "stats": {
+        "validPixels": 17341,
+        "flooded_km2_native": 2.26
+      }
+    },
+    {
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 1362,
+        "height": 1552,
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "transform": [
+          49.967903003947214,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -49.98165149439577,
+          1323596.918078772
+        ],
+        "pixelSizeMetres": 50,
+        "note": "Atlas display bounds at twice the base resolution."
+      },
+      "provenanceFile": "floods/provenance.json",
+      "project": "https://github.com/mhdejas/earthsim-omega",
+      "official": false,
+      "id": "flood-2019",
+      "title": "Flood seen by radar \u00b7 10 Aug 2019",
+      "image": "floods/flood-2019.png",
+      "legend": [
+        {
+          "label": "Newly flooded open water",
+          "color": "#d1495b"
+        },
+        {
+          "label": "Normal river, lake or backwater",
+          "color": "#5b8fb9"
+        },
+        {
+          "label": "Not seen by this radar pass",
+          "color": "#b9b9b9"
+        }
+      ],
+      "evidence": "observed",
+      "source": "Sentinel-1 RTC radar, 10 Aug 2019 pass (EARTHSIM-Omega flood detection)",
+      "sourceUrl": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+      "license": "Copernicus Sentinel data terms (free, full and open)",
+      "period": "10 Aug 2019",
+      "resolution": "30 m analysis; 50 m display (a cell shows flooding if any 30 m pixel inside it did)",
+      "method": "VV backscatter drop of at least 3 dB against same-orbit dry-season references and post-event backscatter below \u221215 dB; permanent water from the dry-season references.",
+      "limitations": "Observed open water at one moment only. Radar misses water under trees, between buildings and at the true peak; areas without colour were not seen to flood, which does not mean they stayed dry or are safe. This pass covers only the eastern part of the district.",
+      "attribution": "Contains modified Copernicus Sentinel data 2018\u20132019, processed by EARTHSIM-Omega from Microsoft Planetary Computer Sentinel-1 RTC.",
+      "stats": {
+        "validPixels": 855893,
+        "flooded_km2_native": 0.28
+      }
+    },
+    {
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 1362,
+        "height": 1552,
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "transform": [
+          49.967903003947214,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -49.98165149439577,
+          1323596.918078772
+        ],
+        "pixelSizeMetres": 50,
+        "note": "Atlas display bounds at twice the base resolution."
+      },
+      "provenanceFile": "floods/provenance.json",
+      "project": "https://github.com/mhdejas/earthsim-omega",
+      "official": false,
+      "id": "flood-low-land",
+      "title": "Low land near streams",
+      "image": "floods/flood-low-land.png",
+      "legend": [
+        {
+          "label": "0\u20130.5 m above stream",
+          "color": "#0b4f8a"
+        },
+        {
+          "label": "0.5\u20132 m above stream",
+          "color": "#3c8dc5"
+        },
+        {
+          "label": "2\u20135 m above stream",
+          "color": "#a9d1ea"
+        }
+      ],
+      "evidence": "modelled",
+      "source": "Height above nearest drainage (HAND) from Copernicus DEM GLO-30 (EARTHSIM-Omega)",
+      "sourceUrl": "https://registry.opendata.aws/copernicus-dem/",
+      "license": "Copernicus DEM free public licence",
+      "period": "2021 DEM release",
+      "resolution": "30 m analysis; 50 m display (cell average)",
+      "method": "Priority-Flood depression filling, D8 flow directions, streams where the upstream area reaches 1 km\u00b2, then height of each cell above the stream it drains to.",
+      "limitations": "A surface model that includes trees and buildings. Low height above a stream means water could reach it in a flood; it is not a flood record. Land higher than 5 m is left clear, which does not mean safe.",
+      "attribution": "Produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+      "stats": {
+        "validPixels": 204461
+      }
+    },
+    {
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 1362,
+        "height": 1552,
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "transform": [
+          49.967903003947214,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -49.98165149439577,
+          1323596.918078772
+        ],
+        "pixelSizeMetres": 50,
+        "note": "Atlas display bounds at twice the base resolution."
+      },
+      "provenanceFile": "floods/provenance.json",
+      "project": "https://github.com/mhdejas/earthsim-omega",
+      "official": false,
+      "id": "flood-susceptibility",
+      "title": "Flood susceptibility rank",
+      "image": "floods/flood-susceptibility.png",
+      "legend": [
+        {
+          "label": "Top 1 % of district",
+          "color": "#6a1b6f"
+        },
+        {
+          "label": "Top 1\u20135 %",
+          "color": "#b2307f"
+        },
+        {
+          "label": "Top 5\u201310 %",
+          "color": "#e46aa7"
+        },
+        {
+          "label": "Top 10\u201325 %",
+          "color": "#f6b7cf"
+        }
+      ],
+      "evidence": "modelled",
+      "source": "EARTHSIM-Omega logistic flood-susceptibility score",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "license": "Derived from Copernicus DEM and Sentinel data; see provenance",
+      "period": "Fit on 14 Aug 2018 radar flooding",
+      "resolution": "30 m analysis; 50 m display, ranked within the district",
+      "method": "Logistic model on terrain predictors fit to 2018 radar flooding with 5 km spatial-block cross-validation; cells ranked by score within the district.",
+      "limitations": "A relative rank, not a probability. On the held-out 2019 test it did not beat the simple \u20180.5 m above a stream\u2019 rule. The lowest 75 % of cells are left clear, which does not mean safe.",
+      "attribution": "Produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+      "stats": {
+        "validPixels": 246787
+      }
+    },
+    {
+      "bounds": [
+        [
+          11.12271,
+          75.53652
+        ],
+        [
+          11.80564,
+          76.14788
+        ]
+      ],
+      "inputCrs": "EPSG:32643",
+      "displayCrs": "EPSG:3857",
+      "displayGrid": {
+        "crs": "EPSG:3857",
+        "width": 1362,
+        "height": 1552,
+        "bounds3857": [
+          8408686.942695925,
+          1246025.3949594698,
+          8476743.226587301,
+          1323596.918078772
+        ],
+        "transform": [
+          49.967903003947214,
+          0.0,
+          8408686.942695925,
+          0.0,
+          -49.98165149439577,
+          1323596.918078772
+        ],
+        "pixelSizeMetres": 50,
+        "note": "Atlas display bounds at twice the base resolution."
+      },
+      "provenanceFile": "floods/provenance.json",
+      "project": "https://github.com/mhdejas/earthsim-omega",
+      "official": false,
+      "id": "flood-hindcast-2019",
+      "title": "Simulated flood \u00b7 1\u201310 Aug 2019",
+      "image": "floods/flood-hindcast-2019.png",
+      "legend": [
+        {
+          "label": "0.3\u20131 m deep",
+          "color": "#c9d8ee"
+        },
+        {
+          "label": "1\u20132 m deep",
+          "color": "#7fa6d9"
+        },
+        {
+          "label": "2\u20135 m deep",
+          "color": "#3c62b3"
+        },
+        {
+          "label": "5 m or deeper",
+          "color": "#1b2f6e"
+        }
+      ],
+      "evidence": "simulated",
+      "source": "EARTHSIM-Omega rain-on-grid flood model driven by ERA5 rain",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "license": "ERA5: Copernicus Climate Change Service licence; model output from EARTHSIM-Omega",
+      "period": "1\u201310 Aug 2019 (410 mm district-mean rain)",
+      "resolution": "240 m model cells; 50 m display (nearest)",
+      "method": "Local-inertial 2-D shallow-water solver, runoff coefficient 0.7, default settings; peak depth over the run.",
+      "limitations": "What the model produced, not what happened. Uniform rain, no infiltration, channel shape, tides or dams; uncalibrated run. Depths under 0.3 m are left clear.",
+      "attribution": "Contains modified Copernicus Climate Change Service information (ERA5) and Copernicus DEM data.",
+      "stats": {
+        "validPixels": 108026
+      }
     }
   ],
   "generated": "2026-10-19",

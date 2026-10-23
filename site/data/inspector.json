@@ -132,6 +132,88 @@
       "rights": "GSI web-display and redistribution rights remain unresolved. Source attribution, this caveat and owner approval do not grant permission. Public download is not an open reuse licence; GSI source rights are retained. No written permission is claimed; GSI map exports remain withheld.",
       "rightsNoticeFile": "GSI_RIGHTS.md",
       "attribution": "Geological Survey of India, 2022 / Kerala State Disaster Management Authority. Atlas display adaptation, not an official warning product."
+    },
+    "flood-2018": {
+      "image": "inspector-flood-2018.png",
+      "encoding": "uint8",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 0,
+      "units": "radar class",
+      "classCodes": {
+        "1": "No new open water seen",
+        "2": "Newly flooded open water seen",
+        "3": "Normal water (river, lake, backwater)",
+        "4": "Not covered by this radar pass"
+      },
+      "evidence": "observed",
+      "source": "Sentinel-1 RTC via EARTHSIM-Omega",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "period": "14 Aug 2018",
+      "date": "14 Aug 2018",
+      "resolution": "30 m analysis; ~100 m query cell (flooded if any 30 m pixel inside was)"
+    },
+    "flood-2019": {
+      "image": "inspector-flood-2019.png",
+      "encoding": "uint8",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 0,
+      "units": "radar class",
+      "classCodes": {
+        "1": "No new open water seen",
+        "2": "Newly flooded open water seen",
+        "3": "Normal water (river, lake, backwater)",
+        "4": "Not covered by this radar pass"
+      },
+      "evidence": "observed",
+      "source": "Sentinel-1 RTC via EARTHSIM-Omega",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "period": "10 Aug 2019",
+      "date": "10 Aug 2019",
+      "resolution": "30 m analysis; ~100 m query cell (flooded if any 30 m pixel inside was)"
+    },
+    "flood-low-land": {
+      "image": "inspector-flood-low-land.png",
+      "encoding": "uint8",
+      "scale": 0.25,
+      "offset": -0.25,
+      "nodata": 0,
+      "units": "m above nearest stream (255 = 63.5 m or more)",
+      "evidence": "modelled",
+      "source": "HAND from Copernicus DEM GLO-30 via EARTHSIM-Omega",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "period": "2021 DEM release",
+      "date": "2021 DEM release",
+      "resolution": "30 m analysis; ~100 m query cell average"
+    },
+    "flood-susceptibility": {
+      "image": "inspector-flood-susceptibility.png",
+      "encoding": "uint8",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 0,
+      "units": "rank, 1 = top 1 % of district cells",
+      "evidence": "modelled",
+      "source": "EARTHSIM-Omega susceptibility score",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "period": "Fit on 2018 radar flooding",
+      "date": "2018 fit",
+      "resolution": "~100 m query cell, ranked within district"
+    },
+    "flood-hindcast-2019": {
+      "image": "inspector-flood-hindcast-2019.png",
+      "encoding": "uint8",
+      "scale": 0.1,
+      "offset": -0.1,
+      "nodata": 0,
+      "units": "m simulated peak depth (255 = 25.4 m or more)",
+      "evidence": "simulated",
+      "source": "EARTHSIM-Omega hindcast, ERA5 rain",
+      "sourceUrl": "https://github.com/mhdejas/earthsim-omega",
+      "period": "1\u201310 Aug 2019",
+      "date": "Aug 2019 hindcast",
+      "resolution": "240 m model cell"
     }
   }
 }
