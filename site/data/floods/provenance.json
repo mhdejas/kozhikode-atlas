@@ -1,0 +1,305 @@
+{
+ "title": "Kozhikode flood evidence from EARTHSIM-Omega",
+ "project": "https://github.com/mhdejas/earthsim-omega",
+ "official": false,
+ "notice": "EARTHSIM-Omega research layer, not an official warning or hazard map; follow IMD, CWC and KSDMA.",
+ "evidenceLabels": {
+  "observed": "measured by satellite",
+  "modelled": "derived from measurements by a rule or statistical model",
+  "simulated": "physics model output driven by past rain",
+  "forecast": "about rain that had not yet fallen"
+ },
+ "displayGrid": {
+  "crs": "EPSG:3857",
+  "width": 1362,
+  "height": 1552,
+  "bounds3857": [
+   8408686.942695925,
+   1246025.3949594698,
+   8476743.226587301,
+   1323596.918078772
+  ],
+  "transform": [
+   49.967903003947214,
+   0.0,
+   8408686.942695925,
+   0.0,
+   -49.98165149439577,
+   1323596.918078772
+  ],
+  "pixelSizeMetres": 50,
+  "note": "Atlas display bounds at twice the base resolution."
+ },
+ "queryGrid": "atlas inspector grid (~100 m), see inspector.json",
+ "heldOutCsi_2019_08_10": {
+  "ksdma_25yr_footprint": 0.023,
+  "calibrated_model": 0.019,
+  "calibrated_model_95ci": [
+   0.001,
+   0.036
+  ],
+  "hand_le_0_5m": 0.015,
+  "default_model": 0.014
+ },
+ "rainTrigger_1day_2024_2026": {
+  "method": "trigger chosen on two monsoons, scored on the held-out third (pooled over 2024, 2025, 2026)",
+  "triggers_chosen_mm": [
+   35,
+   50,
+   50
+  ],
+  "deployed_trigger_mm": 50,
+  "heavy_days": 15,
+  "caught": 9,
+  "false_alarms": 18,
+  "false_alarm_ratio": 0.67,
+  "csi": 0.27,
+  "source": "earthsim-omega/experiments/results/rain_trigger_verification.json"
+ },
+ "observedFloods": {
+  "flood-2018": {
+   "date": "2018-08-14",
+   "coverage": "almost the whole district (0.03 % radar gaps)",
+   "flooded_km2": 2.26,
+   "patch_count": 227,
+   "largest_patches": [
+    {
+     "area_km2": 0.186,
+     "lat": 11.58841,
+     "lon": 75.72423,
+     "near": "Velom",
+     "near_km": 3.8
+    },
+    {
+     "area_km2": 0.139,
+     "lat": 11.55048,
+     "lon": 75.66625,
+     "near": "Maniyur",
+     "near_km": 2.7
+    },
+    {
+     "area_km2": 0.139,
+     "lat": 11.60791,
+     "lon": 75.72621,
+     "near": "Velom",
+     "near_km": 1.9
+    },
+    {
+     "area_km2": 0.087,
+     "lat": 11.25493,
+     "lon": 75.95265,
+     "near": "Mavoor",
+     "near_km": 0.7
+    },
+    {
+     "area_km2": 0.062,
+     "lat": 11.17144,
+     "lon": 75.81128,
+     "near": "Beypore",
+     "near_km": 0.9
+    },
+    {
+     "area_km2": 0.058,
+     "lat": 11.28821,
+     "lon": 75.93382,
+     "near": "Choolur",
+     "near_km": 1.2
+    }
+   ]
+  },
+  "flood-2019": {
+   "date": "2019-08-10",
+   "coverage": "eastern 14 % of district",
+   "flooded_km2": 0.28,
+   "patch_count": 22,
+   "largest_patches": [
+    {
+     "area_km2": 0.08,
+     "lat": 11.26918,
+     "lon": 75.99477,
+     "near": "Koolimadu",
+     "near_km": 1.9
+    },
+    {
+     "area_km2": 0.075,
+     "lat": 11.28776,
+     "lon": 75.99559,
+     "near": "Kodiyathur",
+     "near_km": 0.9
+    },
+    {
+     "area_km2": 0.037,
+     "lat": 11.28544,
+     "lon": 75.9825,
+     "near": "Kodiyathur",
+     "near_km": 0.6
+    },
+    {
+     "area_km2": 0.03,
+     "lat": 11.2682,
+     "lon": 75.98621,
+     "near": "Koolimadu",
+     "near_km": 1.0
+    },
+    {
+     "area_km2": 0.014,
+     "lat": 11.29403,
+     "lon": 75.97759,
+     "near": "Kodiyathur",
+     "near_km": 1.3
+    },
+    {
+     "area_km2": 0.01,
+     "lat": 11.27347,
+     "lon": 75.9778,
+     "near": "Koolimadu",
+     "near_km": 0.2
+    }
+   ]
+  }
+ },
+ "files": {
+  "flood-2018": {
+   "file": "floods/flood-2018.png",
+   "validPixels": 17341,
+   "pixelsByColour": {
+    "#d1495b": 2190,
+    "#5b8fb9": 14891,
+    "#b9b9b9": 260
+   },
+   "bytes": 25537,
+   "sha256": "a118b9b967eb27896d347adaae3ba2183fc3b6ff37253e558c45828541e9144f"
+  },
+  "flood-2019": {
+   "file": "floods/flood-2019.png",
+   "validPixels": 855893,
+   "pixelsByColour": {
+    "#d1495b": 263,
+    "#5b8fb9": 2182,
+    "#b9b9b9": 853448
+   },
+   "bytes": 21214,
+   "sha256": "9560ca2a354fb1989ef68bbb491045ca38cc0eaa80c6f17e01e5f916b5896e8b"
+  },
+  "flood-low-land": {
+   "file": "floods/flood-low-land.png",
+   "validPixels": 204461,
+   "pixelsByColour": {
+    "#0b4f8a": 74075,
+    "#3c8dc5": 49311,
+    "#a9d1ea": 81075
+   },
+   "bytes": 224125,
+   "sha256": "b2f9b39799c1421a8091d69592c105ba56ac11a847c64cd356f9141dd570b0e7"
+  },
+  "flood-susceptibility": {
+   "file": "floods/flood-susceptibility.png",
+   "validPixels": 246787,
+   "pixelsByColour": {
+    "#6a1b6f": 9871,
+    "#b2307f": 39486,
+    "#e46aa7": 49358,
+    "#f6b7cf": 148072
+   },
+   "bytes": 319962,
+   "sha256": "db798a431f85bbc44e39a1d196a75740d4749571804aaad31c38d2893f4ec729"
+  },
+  "flood-hindcast-2019": {
+   "file": "floods/flood-hindcast-2019.png",
+   "validPixels": 108026,
+   "pixelsByColour": {
+    "#c9d8ee": 49140,
+    "#7fa6d9": 23300,
+    "#3c62b3": 28405,
+    "#1b2f6e": 7181
+   },
+   "bytes": 27022,
+   "sha256": "49bc03806da8ea89b809e88d3fb3e9a511498e978219c9de4ae9152e69fe6a6b"
+  }
+ },
+ "inspectorDatasets": [
+  "flood-2018",
+  "flood-2019",
+  "flood-hindcast-2019",
+  "flood-low-land",
+  "flood-susceptibility"
+ ],
+ "figures": [
+  {
+   "file": "floods/figures/01-catchments-modelled.jpg",
+   "evidence": "modelled",
+   "title": "River catchments traced from the terrain model",
+   "source": "earthsim-omega/figures/phone/01_catchments_MODELLED.png",
+   "sourceSha256": "e149fc91fdab0b0dcc09894e1d8004d341d99b211869ae3fb09ab2d373922e4e"
+  },
+  {
+   "file": "floods/figures/02-sar-flood-2018-08-14-observed.jpg",
+   "evidence": "observed",
+   "title": "Flooding seen by Sentinel-1 radar on 14 Aug 2018",
+   "source": "earthsim-omega/figures/phone/02_sar_flood_2018-08-14_OBSERVED.png",
+   "sourceSha256": "25cc1f9fadfba059a93e882e6037b453cdcd139372575a7b7e1c323a8a0f0bab"
+  },
+  {
+   "file": "floods/figures/03-hindcast-aug2019-simulated.jpg",
+   "evidence": "simulated",
+   "title": "Simulated flood depths, 1–10 Aug 2019",
+   "source": "earthsim-omega/figures/phone/03_hindcast_aug2019_SIMULATED.png",
+   "sourceSha256": "d5f10069dd605bbba415f0bae647b086667458cb1f62bdc1d5275ec76ca258f9"
+  },
+  {
+   "file": "floods/figures/04-calibration-heldout-simulated.jpg",
+   "evidence": "simulated",
+   "title": "How the flood model scored on a year it never saw",
+   "source": "earthsim-omega/figures/phone/04_calibration_heldout_SIMULATED.png",
+   "sourceSha256": "60b32e1a24236e8503042fe3fd1dfafd594a79cb901fb000a9326344700d6405"
+  },
+  {
+   "file": "floods/figures/05-rain-trigger-replay-observed-vs-forecast.jpg",
+   "evidence": "forecast",
+   "title": "Rain trigger replayed over the 2024–2026 monsoons",
+   "source": "earthsim-omega/figures/phone/05_rain_trigger_replay_OBSERVED_vs_FORECAST.png",
+   "sourceSha256": "39505b46aa44c7d8650c38e275baec6e92f119855d812adc0be5d01b9e1b8050"
+  },
+  {
+   "file": "floods/figures/06-live-outlook-2026-10-23-forecast.jpg",
+   "evidence": "forecast",
+   "title": "Experimental 3-day outlook issued 23 Oct 2026",
+   "source": "earthsim-omega/figures/phone/06_live_outlook_2026-10-23_FORECAST.png",
+   "sourceSha256": "b44fb9fab0cf9f24a1083cb8927a9c2bd2bcea497fab8f807e18d0a3a43d218d"
+  }
+ ],
+ "inputs": {
+  "susceptibility": {
+   "path": "data/processed/flood/flood_susceptibility_score.tif",
+   "sha256": "6ff40311a1408ea49ea7a1565ede3d30d6718aef3c34cbac523433d1bc8e9199"
+  },
+  "sar_2018_08_14": {
+   "path": "data/processed/flood/s1_flood_observed_2018-08-14.tif",
+   "sha256": "8fed2e618707a4d78566e5f5b9438d01bf219756f73f760068bec3d12b740220"
+  },
+  "sar_2019_08_10": {
+   "path": "data/processed/flood/s1_flood_observed_2019-08-10.tif",
+   "sha256": "a03ea5aabe4049de06a33cd5593bc96957d63c435e8a403d0a15baedda9274d9"
+  },
+  "hand": {
+   "path": "data/processed/terrain/hand.tif",
+   "sha256": "1fb2ecc558c2bf1e0afc5a81cb41acc4137538ed151ed1ee8290a6faa65654cf"
+  },
+  "hindcast_depth_max": {
+   "path": "data/processed/hydraulics/base_depth_max.tif",
+   "sha256": "f603750bbea0016e093e25a4744680f3022b2b7b781ffa202a15f4959758298b"
+  },
+  "calibration_test": {
+   "path": "experiments/results/calibration_test.json",
+   "sha256": "78221cb966bc84719682f321bf3e170ca75741d7bde60c32347087922f8c872b"
+  },
+  "rain_trigger_verification": {
+   "path": "experiments/results/rain_trigger_verification.json",
+   "sha256": "230be57c7ae2f5a2ef6937a9c884307519e877187483b68f247c3f163aaf6fb0"
+  },
+  "forecast_alert": {
+   "path": "experiments/results/forecast_alert_20261023T0331_IST.json",
+   "sha256": "45cca93deb1bfa8e2781ffcca6db5c93395e7f05e08c24bc39a1a531c84fb89c"
+  }
+ }
+}
