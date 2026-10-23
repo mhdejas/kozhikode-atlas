@@ -12,7 +12,7 @@ You only need Python to serve the site:
 python3 -m http.server 8000 --directory site
 ```
 
-Open <http://localhost:8000>. Opening the HTML file directly will not work reliably because the app fetches its data over HTTP. Context tiles need an internet connection; the bundled data does not.
+On Windows, type `py` instead of `python3`. Open <http://localhost:8000>. Opening the HTML file directly will not work reliably because the app fetches its data over HTTP. Context tiles need an internet connection; the bundled data does not.
 
 ## What is in the map?
 
@@ -22,10 +22,13 @@ Open <http://localhost:8000>. Opening the HTML file directly will not work relia
 - Indicative assembly constituency borders and an election archive. Older seats stay separate from today's polygons.
 - GSI 2022 landslide susceptibility zones, with an explicit unresolved-rights notice and a source-class inspector.
 - A separate overlay of 235 recorded landslide initiation points from the 2018 monsoon inventory.
+- Flood evidence from [EARTHSIM-Ω](https://github.com/mhdejas/earthsim-omega): Sentinel-1 radar flooding on 14 August 2018 and 10 August 2019, low land near streams, a flood susceptibility rank, a simulated August 2019 flood, a replay of a rain alarm over the 2024–2026 monsoons and a frozen sample outlook. Open the **Floods** tab or the *Flood evidence* button.
 
 **GSI reuse rights remain unresolved.** The app displays GSI 2022 susceptibility zones supplied through KSDMA. Permission for web display and redistribution of this district derivative has not been established. Attribution and this caveat do not grant permission. This is a non-official atlas, not a GSI or KSDMA product or warning service. See [the full GSI rights and source notice](site/data/GSI_RIGHTS.md). GSI map exports remain blocked; other atlas exports remain available.
 
 The 2018 points are a different, licensed dataset: C.J. van Westen (2020), *Landslide inventory of the 2018 monsoon rainfall in Kerala, India*, version 2.0, [DANS](https://doi.org/10.17026/dans-x6c-y7x2), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The atlas selects points within its district boundary, keeps a reduced set of fields and converts the result to 2D WGS 84 GeoJSON. These are historical initiation points, not landslide footprints, current warnings or evidence that nearby land is safe. Source district labels and the atlas boundary do not always agree; the selection checks are retained in the provenance file.
+
+**Flood layers are research, not warnings.** Every flood layer is labelled *observed* (seen by a satellite), *modelled* (worked out from terrain or statistics), *simulated* (a physics model replaying past rain) or *forecast*. Tested against radar flooding on 10 August 2019, the tuned EARTHSIM flood model scored a CSI of 0.019, below the official KSDMA 25-year flood map at 0.023. In a fair test over the 2024–2026 monsoons, the rain alarm caught 9 of 15 very heavy rain days a day ahead, with a false-alarm ratio of 0.67, and it missed the 30 July 2024 Vilangad landslide day. The outlook on the page is a snapshot from 23 October 2026, not a live forecast. For warnings, follow [IMD](https://mausam.imd.gov.in/), [CWC](https://ffs.india-water.gov.in/) and [KSDMA](https://sdma.kerala.gov.in/). Radar misses water under trees and between buildings, so a dry-looking area is not proof that it is safe. Checksums and sources for every flood file are in [site/data/floods/provenance.json](site/data/floods/provenance.json).
 
 ## Read the sources before drawing conclusions
 
@@ -84,7 +87,7 @@ PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -v
 
 Tests use the files in this repository, not a private workspace. Checks that need omitted raw rasters report a skip. Static contracts and syntax checks do not replace a browser test of interactions, rendering or downloads.
 
-Preparation scripts download or produce local `raw/` and `work/` directories. Those inputs are deliberately absent from this public snapshot. `acquire.py` and `thematic.py` prepare the base layers; `prepare_inspector.py` and `prepare_terrain_3d.py` build their query and terrain assets. `prepare_landslides.py` prepares the GSI display/query rasters; `annotate_landslide_research.py` adds public-source evidence, scale and coverage notes without changing class pixels. `prepare_landslide_inventory.py` retrieves and checksum-checks the licensed DANS inventory; any GSI overlap counts are descriptive, not independent validation. These scripts do not establish reuse permission. The urban workflow needs your own authorised Earth Engine project. It is documented separately; credentials are never part of the site.
+Preparation scripts download or produce local `raw/` and `work/` directories. Those inputs are deliberately absent from this public snapshot. `acquire.py` and `thematic.py` prepare the base layers; `prepare_inspector.py` and `prepare_terrain_3d.py` build their query and terrain assets. `prepare_landslides.py` prepares the GSI display/query rasters; `annotate_landslide_research.py` adds public-source evidence, scale and coverage notes without changing class pixels. `prepare_floods.py --earthsim ../earthsim-omega` copies the flood layers, point-query grids, rain replay, outlook snapshot and figures from a local EARTHSIM-Ω run and records their checksums; it only reads that project. `prepare_landslide_inventory.py` retrieves and checksum-checks the licensed DANS inventory; any GSI overlap counts are descriptive, not independent validation. These scripts do not establish reuse permission. The urban workflow needs your own authorised Earth Engine project. It is documented separately; credentials are never part of the site.
 
 These are individual preparation steps, not a one-command rebuild of every election, portrait and locator asset. A new source download can change the snapshot. Review the resulting metadata, licences and tests before replacing published data.
 
