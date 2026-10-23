@@ -69,3 +69,8 @@ dialog{background:#fff;color:var(--ink);border:1px solid #cfdee7;border-radius:8
 .election-timeline-year li{display:block}.timeline-row{min-width:0}.timeline-row strong,.timeline-row span{overflow-wrap:anywhere}
 dialog{max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);overflow:auto}
 @media(max-width:760px){dialog{padding:24px 18px}.map-topline>div{min-width:0}.map-topline .text-btn{flex-shrink:0}.map-topline .map-tag{line-height:1.25}.map-topline strong{overflow-wrap:anywhere}}
+.theme-card[data-theme="flood-2018"] .thumb{background:#eef2f4 url('data/floods/flood-2018.png') center/cover}
+.theme-card[data-theme="flood-2019"] .thumb{background:#eef2f4 url('data/floods/flood-2019.png') center/cover}
+.theme-card[data-theme="flood-low-land"] .thumb{background:#eef2f4 url('data/floods/flood-low-land.png') center/cover}
+.theme-card[data-theme="flood-susceptibility"] .thumb{background:#f6eef3 url('data/floods/flood-susceptibility.png') center/cover}
+.theme-card[data-theme="flood-hindcast-2019"] .thumb{background:#eef1f7 url('data/floods/flood-hindcast-2019.png') center/cover}

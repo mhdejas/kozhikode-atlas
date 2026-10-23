@@ -66,6 +66,8 @@
         const inside=boundary&&insideGeometry([latlng.lng,latlng.lat],boundary.geometry);
         const e=inside?sample(meta,grids,'elevation',latlng.lat,latlng.lng):null,s=inside?sample(meta,grids,'slope',latlng.lat,latlng.lng):null,l=inside?sample(meta,grids,'landcover',latlng.lat,latlng.lng):null;
         const ls=inside&&meta.datasets.landslide?sample(meta,grids,'landslide',latlng.lat,latlng.lng):null;
+        const floodIds=['flood-2018','flood-2019','flood-low-land','flood-susceptibility','flood-hindcast-2019'];
+        const fl=inside&&meta.datasets['flood-2018']?Object.fromEntries(floodIds.map(k=>[k,meta.datasets[k]?sample(meta,grids,k,latlng.lat,latlng.lng):null])):null;
         const pt=utm43(latlng.lng,latlng.lat);let nearest=null,dist=Infinity;
         if(inside)for(const f of features.features){const d=geometrySquared(pt,f.geometry);if(d<dist){dist=d;nearest=f;}}
         const coords=`${Math.abs(latlng.lat).toFixed(5)}° ${latlng.lat<0?'S':'N'}, ${Math.abs(latlng.lng).toFixed(5)}° ${latlng.lng<0?'W':'E'}`;
@@ -78,11 +80,16 @@
           datasetRow('slope','Surface slope',s==null?'No data':`${s.toFixed(1)}°`,s==null?'No valid district pixel.':'90 m metric analysis · DSM-derived, not a site survey.')+
           datasetRow('landcover','Land cover',l==null?'No data':classes[String(l)]||`Class ${l}`,l==null?'No valid district pixel.':`WorldCover class ${l} · modelled, not ground verified.`)+
           (meta.datasets.landslide?datasetRow('landslide','Landslide susceptibility',ls==null?(inside?'No data':'Outside district coverage'):meta.datasets.landslide.classCodes[String(ls)]+(ls<4?' susceptibility':''),'GSI zones, not a probability or live warning. Low or unmapped does not mean safe. Approx. 100 m query cells cannot assess a property; runout may extend beyond zones.'):'')+
+          (fl?row('Flood evidence','EARTHSIM-Ω research layers','Observed, modelled and simulated readings for this ~100 m cell. Not an official warning: follow IMD, CWC and KSDMA.',source('EARTHSIM-Ω project','https://github.com/mhdejas/earthsim-omega','Oct 2026'))+
+            ['flood-2018','flood-2019'].map((k,i)=>datasetRow(k,`Radar flood · ${i?'10 Aug 2019':'14 Aug 2018'} (observed)`,fl[k]==null?'No data':meta.datasets[k].classCodes[String(fl[k])]||`Class ${fl[k]}`,fl[k]===2?'Sentinel-1 saw new open water in this cell.':'Radar misses water under trees and between buildings; not seen ≠ safe.')).join('')+
+            datasetRow('flood-low-land','Height above nearest stream (modelled)',fl['flood-low-land']==null?'No data':fl['flood-low-land']>=63.5?'63.5 m or more':`${fl['flood-low-land'].toFixed(fl['flood-low-land']<10?1:0)} m`,fl['flood-low-land']!=null&&fl['flood-low-land']<=0.5?'Very low: flood water could reach it easily. From the terrain model, not a flood record.':'From the terrain model, not a flood record.')+
+            datasetRow('flood-susceptibility','Flood susceptibility (modelled)',fl['flood-susceptibility']==null?'No data':`Top ${fl['flood-susceptibility']}% of district`,'Relative rank fit on 2018 radar flooding, not a probability.')+
+            datasetRow('flood-hindcast-2019','Simulated peak depth · Aug 2019',fl['flood-hindcast-2019']==null?'No data':fl['flood-hindcast-2019']<0.3?'Under 0.3 m or dry':`${fl['flood-hindcast-2019'].toFixed(1)} m`,'Simulated: what the model produced for 1–10 Aug 2019, not what happened.'):'')+
           row('Nearest named feature',nearest?nearest.name:'Not queried outside coverage',nearest?`${distance} straight-line to mapped ${nearest.kind} geometry · nearest in this atlas, not every real-world feature.`:'Named-feature coverage is limited to the district dataset.',source('© OpenStreetMap contributors',nearest?.osm_id?`https://www.openstreetmap.org/${nearest.geometry.type==='Point'?'node':'way'}/${nearest.osm_id}`:'https://www.openstreetmap.org/copyright',nearest?.date||features.date||'Snapshot 19 Oct 2026'))+
           '</dl><p class="inspect-method">Raster values are sampled from the atlas’s approximately 100 m query grid, not native-resolution or live observations. Dates refer to each source product; the DEM release date is not its acquisition date.</p><button type="button" class="inspect-copy">Copy coordinates</button>';
         body.querySelector('.inspect-copy').onclick=async()=>{const b=body.querySelector('.inspect-copy');try{await navigator.clipboard.writeText(`${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`);b.textContent='Copied';}catch{b.textContent=`${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;}};
         panel.scrollTop=0;
-        api.last={coordinates:last,inside,elevation:e,slope:s,landcover:l,landslide:ls,nearest:nearest?.name,distanceMetres:nearest?metres:null};
+        api.last={coordinates:last,inside,elevation:e,slope:s,landcover:l,landslide:ls,flood:fl,nearest:nearest?.name,distanceMetres:nearest?metres:null};
       } catch(error) {if(token!==request)return;body.innerHTML='<p class="inspect-error">Point data could not load. Check your connection, then select the point again.</p>';}
     }
     toggle.onclick=()=>{enabled=!enabled;toggle.setAttribute('aria-pressed',String(enabled));wrap.classList.toggle('inspection-enabled',enabled);if(!enabled)close();};
